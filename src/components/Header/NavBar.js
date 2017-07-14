@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid } from 'react-bootstrap';
 import styled from 'styled-components';
-import theme from '../../theme';
+import theme from '../theme';
 
 import NavLogo from './NavLogo';
 import NavLinks from './NavLinks';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import theme from '../../theme';
+import theme from '../theme';
 
 import TitleBar from './TitleBar';
 import NavBar from './NavBar';
@@ -36,7 +36,7 @@ class Header extends Component {
 
   handleNavClick = (e) => {
     const { isMobile, mobileNavVisible } = this.state;
-e.preventDefault();
+
     if(isMobile && !mobileNavVisible) {
       this.setState({mobileNavVisible: true});
     } else {

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../../../public/img/office-of-digital-innovation-logo.png';
+import logo from './_odiLogo.png';
 
 const Wrapper = styled.a`
   margin: ${props => props.isMobile ? '15px 0' : '0'};

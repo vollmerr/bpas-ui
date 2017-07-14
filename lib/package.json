@@ -1,0 +1,11 @@
+{
+  "name": "ps-react",
+  "version": "0.1.2",
+  "main": "./index.js",
+  "dependencies": {
+    "bootstrap": "3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "styled-components": "^2.1.1"
+  }
+}
