@@ -1,0 +1,32 @@
+.header-nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav-links__item {
+    flex: 1 1 auto;
+}
+
+.header-nav-links__item:hover .header-nav-links__icon,
+.header-nav-links__item:hover {
+    color: #046b99;
+}
+
+.header-nav-links__item > a {
+    display: block;
+    padding: 12px 0;
+    text-align: center;
+    color: inherit;
+}
+
+.header-nav-links__item > a:hover {
+    text-decoration: none;
+}
+
+.header-nav-links__icon {
+    display: block;
+    font-size: 32px;
+    color: #9fc7da;
+}
