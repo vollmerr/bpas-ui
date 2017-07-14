@@ -1,8 +1,27 @@
 import React from 'react';
-import { Header } from 'bpas-ui';
-import TitleBar from 'bpas-ui/Header/TitleBar';
 import { storiesOf } from '@storybook/react';
+import { Header } from 'bpas-ui';
+
+import TitleBar from 'bpas-ui/Header/TitleBar';
+import TitleLinks from 'bpas-ui/Header/TitleLinks';
+import TitleLogo from 'bpas-ui/Header/TitleLogo';
+import TitleText from 'bpas-ui/Header/TitleText';
+
+import NavBar from 'bpas-ui/Header/NavBar';
+import NavLinks from 'bpas-ui/Header/NavLinks';
+import NavLink from 'bpas-ui/Header/NavLink';
+import NavLogo from 'bpas-ui/Header/NavLogo';
 
 storiesOf('Header')
-  .addWithInfo('<Header />', () => <Header title="Test Header Title" />)
-  .addWithInfo('<TitleBar />', () => <TitleBar title="Test TitleBar Title" />);
+  .add('<Header />', () => <Header title="Test Header Title" />)
+
+  .add('<TitleBar />', () => <TitleBar title="Test TitleBar Title" />)
+  .add('<TitleLinks />', () => <TitleLinks />)
+  .add('<TitleLogo />', () => <TitleLogo />)
+  .add('<TitleText />', () => <TitleText title="Test TitleText Title" />)
+
+  .add('<NavBar />', () => <NavBar />)
+  .add('<NavLinks />', () => <NavLinks />)
+  .add('<NavLink />', () => <NavLink link={{href: '/', text: 'Example NavLink', icon: 'science'}} />)
+  .add('<NavLogo />', () => <NavLogo />);
+

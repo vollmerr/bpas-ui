@@ -4,34 +4,42 @@ import { Grid } from 'react-bootstrap';
 import styled from 'styled-components';
 import theme from '../../theme';
 
+import TitleLogo from './TitleLogo';
 import TitleText from './TitleText';
 import TitleLinks from './TitleLinks';
 
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
   background: ${theme.color.primary};
   height: ${theme.size.titleBar}px;
 `;
 
-const Center = styled.div`
+const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: ${theme.size.minWidth}px;
+`;
+
+const Left = styled.div`
+  display: flex;
 `;
 
 /** Renders the headers title bar */
 function TitleBar({
   title,
   isMobile = false,
+  onClick,
 }) {
   return (
     <Wrapper>
       <Grid>
-        <Center>
-          <TitleText title={title} isMobile={isMobile} />
-          <TitleLinks />
-        </Center>
+        <Content>
+          <Left>
+            <TitleLogo onClick={onClick} />
+            {!isMobile && <TitleText title={title} />}
+          </Left>
+          <TitleLinks onClick={onClick} />
+        </Content>
       </Grid>
     </Wrapper>
   );
@@ -40,6 +48,7 @@ function TitleBar({
 TitleBar.propTypes = {
   title: PropTypes.string.isRequired,
   isMobile: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 export default TitleBar;

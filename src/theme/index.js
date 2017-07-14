@@ -2,7 +2,9 @@ export default {
   color: {
     primary: '#046b99',
     primaryInverse: '#ffffff',
-    second: '#fd881e',
+    second: '#fdb81e',
+
+    faded: '#9fc7da',
   },
 
   size: {
@@ -13,7 +15,7 @@ export default {
     xl: 25,
 
     titleBar: 40,
-    header: 140,
+    navBar: 90,
   },
 
   font: {
@@ -22,6 +24,12 @@ export default {
     md: 18,
     lg: 22,
     xl: 26,
-  }
+  },
 
+  breakpoints: {
+    sm: 576,
+    md: 768,
+    lg: 992,
+    xl: 1200,
+  },
 };

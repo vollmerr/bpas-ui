@@ -5,6 +5,7 @@ import theme from '../../theme';
 const Links = styled.a`
   color: #fff;
   padding: ${theme.size.xs}px;
+
   &:hover {
     text-decoration: none;
     color: ${theme.color.second};
@@ -12,9 +13,9 @@ const Links = styled.a`
 `;
 
 /** Renders the title bars links */
-function TitleLinks() {
+function TitleLinks(props) {
   return (
-      <Links href={'/help'}>Contact Us</Links>
+      <Links href={'/help'} {...props}>Contact Us</Links>
   );
 }
 
