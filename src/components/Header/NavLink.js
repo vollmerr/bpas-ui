@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Icon from '../Icon';
 import theme from '../theme';
 
-
 const Wrapper = styled.li`
+    text-align: ${props => props.isMobile ? 'left' : 'center'};
+
     &:not(:last-child) {
       border-bottom: ${props => props.isMobile ? `1px solid ${theme.color.faded}` : 'none'};
     }
@@ -15,23 +17,28 @@ const StyledIcon = styled(Icon)`
     display: ${props => props.isMobile ? 'inline-block' : 'block'};
     vertical-align: ${props => props.isMobile ? 'middle' : 'baseline'};
     color: ${theme.color.faded};
-    padding-right: ${props => props.isMobile ? '10px' : '0'}
+    padding-right: ${props => props.isMobile ? '10px' : '0'};
 `;
 
-const Link = styled.a`
+const StyledLink = styled(Link)`
     display: block;
     color: inherit;
-    text-align: ${props => props.isMobile ? 'left' : 'center'};
     padding: ${theme.size.sm}px;
 
     &:hover,
     &:focus,
+    &.active,
     &:hover > ${StyledIcon},
-    &:focus > ${StyledIcon} {
+    &:focus > ${StyledIcon},
+    &.active > ${StyledIcon} {
       text-decoration: none;
       color: ${theme.color.primary};
     }
 `;
+
+const activeStyle = {
+    color: `${theme.color.primary}`,
+};
 
 /** Renders a single navbar link */
 function NavLink({
@@ -42,10 +49,10 @@ function NavLink({
 }) {
   return (
     <Wrapper isMobile={isMobile}>
-      <Link
-        href={link.href}
+      <StyledLink
+        exact={link.href === '/'}
+        to={link.href}
         onClick={onClick}
-        isMobile={isMobile}
       >
         <StyledIcon
           icon={link.icon}
@@ -53,7 +60,7 @@ function NavLink({
           isMobile={isMobile}
         />
         {link.text}
-      </Link>
+      </StyledLink>
     </Wrapper>
   );
 }
@@ -70,8 +77,3 @@ NavLink.PropTypes = {
 };
 
 export default NavLink;
-
-
-
-
-

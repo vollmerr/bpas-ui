@@ -34,7 +34,7 @@ class Header extends Component {
     }
   }
 
-  handleNavClick = (e) => {
+  handleNavToggle = () => {
     const { isMobile, mobileNavVisible } = this.state;
 
     if(isMobile && !mobileNavVisible) {
@@ -44,6 +44,10 @@ class Header extends Component {
     }
   }
 
+  handleNavClose = () => {
+    this.setState({mobileNavVisible: false});
+  }
+
   render() {
     const { title } = this.props;
     const { isMobile, mobileNavVisible } = this.state;
@@ -51,13 +55,14 @@ class Header extends Component {
     const titleBarProps = {
       title,
       isMobile,
-      onClick: this.handleNavClick,
+      onClick: this.handleNavClose,
     };
 
     const navBarProps = {
       isMobile,
       mobileNavVisible,
-      onClick: this.handleNavClick,
+      onClick: this.handleNavClose,
+      onToggle: this.handleNavToggle,
     };
 
     return (

@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import theme from '../theme';
 
-const Links = styled.a`
+const Links = styled(Link)`
   color: #fff;
   padding: ${theme.size.xs}px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none;
     color: ${theme.color.second};
   }
@@ -15,7 +17,7 @@ const Links = styled.a`
 /** Renders the title bars links */
 function TitleLinks(props) {
   return (
-      <Links href={'/help'} {...props}>Contact Us</Links>
+      <Links to={'/help'} {...props}>Contact Us</Links>
   );
 }
 

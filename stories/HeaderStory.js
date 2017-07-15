@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import StoryRouter from 'storybook-router';
 import { Header } from 'bpas-ui';
 
 import TitleBar from 'bpas-ui/Header/TitleBar';
@@ -13,6 +14,7 @@ import NavLink from 'bpas-ui/Header/NavLink';
 import NavLogo from 'bpas-ui/Header/NavLogo';
 
 storiesOf('Header')
+  .addDecorator(StoryRouter())
   .add('<Header />', () => <Header title="Test Header Title" />)
 
   .add('<TitleBar />', () => <TitleBar title="Test TitleBar Title" />)
@@ -24,4 +26,3 @@ storiesOf('Header')
   .add('<NavLinks />', () => <NavLinks />)
   .add('<NavLink />', () => <NavLink link={{href: '/', text: 'Example NavLink', icon: 'science'}} />)
   .add('<NavLogo />', () => <NavLogo />);
-

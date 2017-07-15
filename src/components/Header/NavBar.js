@@ -28,6 +28,7 @@ function NavBar({
   isMobile = false,
   mobileNavVisible = false,
   onClick,
+  onToggle,
 }) {
   const navLogoProps = {
     isMobile,
@@ -35,7 +36,7 @@ function NavBar({
   };
 
   const navMobileProps = {
-    onClick,
+    onClick: onToggle,
   };
 
   const navLinksProps = {
