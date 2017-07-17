@@ -16,6 +16,7 @@ npm i -g create-react-app
 
 ```
 create-react-app <appName>
+cd <appName>
 ```
 
 3. Eject out of the default build
@@ -100,7 +101,7 @@ ReactDOM.render(
 
 ```
 
-8. Run the application (should automatically open at localhost:3000)
+8. Run the application (should automatically open at [localhost:3000](http://localhost:3000))
 
 ```
 npm start
