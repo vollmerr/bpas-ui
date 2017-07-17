@@ -5,6 +5,7 @@ export default {
     second: '#fdb81e',
 
     faded: '#9fc7da',
+    bold: '#222222',
   },
 
   size: {
@@ -16,6 +17,9 @@ export default {
 
     titleBar: 40,
     navBar: 90,
+    header: 135,
+    footer: 35,
+    contentHeight: 700,
   },
 
   font: {
@@ -32,4 +36,9 @@ export default {
     lg: 992,
     xl: 1200,
   },
+
+  index: { // https://v4-alpha.getbootstrap.com/layout/overview/#z-index
+    header: 1000,
+    tooltip: 1070
+  }
 };

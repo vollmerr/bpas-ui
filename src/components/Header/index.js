@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import theme from '../theme';
 
 import TitleBar from './TitleBar';
 import NavBar from './NavBar';
+
+const Wrapper = styled.header`
+  height: ${theme.size.header}px;
+  margin-bottom: ${theme.size.lg}px;
+  position: relative;
+  z-index: ${theme.index.header}
+`;
 
 /** Renders the Header */
 class Header extends Component {
@@ -34,7 +42,7 @@ class Header extends Component {
     }
   }
 
-  handleNavClick = (e) => {
+  handleNavToggle = () => {
     const { isMobile, mobileNavVisible } = this.state;
 
     if(isMobile && !mobileNavVisible) {
@@ -44,6 +52,10 @@ class Header extends Component {
     }
   }
 
+  handleNavClose = () => {
+    this.setState({mobileNavVisible: false});
+  }
+
   render() {
     const { title } = this.props;
     const { isMobile, mobileNavVisible } = this.state;
@@ -51,20 +63,21 @@ class Header extends Component {
     const titleBarProps = {
       title,
       isMobile,
-      onClick: this.handleNavClick,
+      onClick: this.handleNavClose,
     };
 
     const navBarProps = {
       isMobile,
       mobileNavVisible,
-      onClick: this.handleNavClick,
+      onClick: this.handleNavClose,
+      onToggle: this.handleNavToggle,
     };
 
     return (
-      <header>
+      <Wrapper>
         <TitleBar {...titleBarProps} />
         <NavBar {...navBarProps} />
-      </header>
+      </Wrapper>
     );
   }
 }

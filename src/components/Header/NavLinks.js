@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import NavLink from './NavLink';
+import theme from '../theme';
 
 const defaultLinks = [
   { text: 'Home', href: '/', icon: 'home' },
@@ -10,11 +11,12 @@ const defaultLinks = [
 
 const Wrapper = styled.ul`
   display: ${props => props.isMobile ? 'block' : 'flex'};
-  justify-content: space-between;
+  flex: 1;
+  justify-content: space-around;
   list-style-type: none;
-  width: ${props => props.isMobile ? '100%' : '40%'};;
   margin: 0;
   padding: 0;
+  z-index: 1000;
 `;
 
 /** Renders the navbar links */

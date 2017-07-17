@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid } from 'react-bootstrap';
 import styled from 'styled-components';
+import { Container } from 'bpas-ui';
 import theme from '../theme';
 
 import TitleLogo from './TitleLogo';
@@ -32,7 +32,7 @@ function TitleBar({
 }) {
   return (
     <Wrapper>
-      <Grid>
+      <Container>
         <Content>
           <Left>
             <TitleLogo onClick={onClick} />
@@ -40,7 +40,7 @@ function TitleBar({
           </Left>
           <TitleLinks onClick={onClick} />
         </Content>
-      </Grid>
+      </Container>
     </Wrapper>
   );
 }

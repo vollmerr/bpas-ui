@@ -1,7 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
 
-import './HeaderStory';
+import './PageStory';
 
+import './HeaderStory';
 import './FooterStory';
 
 import './IconStory';
