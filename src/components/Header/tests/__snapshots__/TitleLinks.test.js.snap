@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TitleLinks /> renders correctly 1`] = `
+<a
+  className="sc-bdVaJa gNzaWf"
+  href="/help"
+  onClick={[Function]}
+>
+  Contact Us
+</a>
+`;

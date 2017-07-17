@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Version /> renders correctly 1`] = `
+<div
+  className="sc-bdVaJa jHqppW"
+>
+  Version 
+  test 123
+</div>
+`;

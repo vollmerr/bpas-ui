@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Links /> renders correctly 1`] = `
+<div
+  className="sc-bwzfXH dUhRrK"
+>
+  <a
+    className="sc-bxivhb gJUsUs"
+    href="http://www.ca.gov/Use"
+  >
+    Conditions of Use
+  </a>
+  <a
+    className="sc-bxivhb gJUsUs"
+    href="http://www.ca.gov/Privacy"
+  >
+    Privacy Policy
+  </a>
+  <a
+    className="sc-bxivhb gJUsUs"
+    href="http://www.ca.gov/Accessibility"
+  >
+    Accessibility
+  </a>
+  <a
+    className="sc-htpNat kGlyds"
+    href="/help"
+    onClick={[Function]}
+  >
+    Contact Us
+  </a>
+  <div
+    className="sc-bdVaJa jHqppW"
+  >
+    Version 
+    test 123
+  </div>
+</div>
+`;

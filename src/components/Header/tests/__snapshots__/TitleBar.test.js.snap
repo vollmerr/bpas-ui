@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TitleBar /> renders correctly 1`] = `
+<div
+  className="sc-hMqMXs emBvIB"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="sc-kEYyzF bbYXyH"
+    >
+      <div
+        className="sc-kkGfuU fESlcU"
+      >
+        <a
+          href="http://www.ca.gov"
+          onClick={undefined}
+        >
+          <img
+            alt="CA Gov Logo"
+            className="sc-ckVGcZ laVqmj"
+            src="_caGovLogo.svg"
+          />
+        </a>
+        <h1
+          className="sc-jKJlTe jllqoO"
+        >
+          test title
+        </h1>
+      </div>
+      <a
+        className="sc-eNQAEJ cgLvGw"
+        href="/help"
+        onClick={[Function]}
+      >
+        Contact Us
+      </a>
+    </div>
+  </div>
+</div>
+`;

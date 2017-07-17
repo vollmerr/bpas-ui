@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> renders correctly 1`] = `
+<footer
+  className="sc-kEYyzF hQHYZD"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="sc-jKJlTe kgVvmP"
+    >
+      <a
+        className="sc-hMqMXs fCpqvG"
+        href="http://www.ca.gov/Use"
+      >
+        Conditions of Use
+      </a>
+      <a
+        className="sc-hMqMXs fCpqvG"
+        href="http://www.ca.gov/Privacy"
+      >
+        Privacy Policy
+      </a>
+      <a
+        className="sc-hMqMXs fCpqvG"
+        href="http://www.ca.gov/Accessibility"
+      >
+        Accessibility
+      </a>
+      <a
+        className="sc-eNQAEJ dtHCGE"
+        href="/help"
+        onClick={[Function]}
+      >
+        Contact Us
+      </a>
+      <div
+        className="sc-ckVGcZ fmrjhp"
+      >
+        Version 
+        test 123
+      </div>
+    </div>
+  </div>
+</footer>
+`;

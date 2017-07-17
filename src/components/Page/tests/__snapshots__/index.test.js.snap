@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Page /> renders correctly 1`] = `
+<div>
+  <header
+    className="sc-cSHVUG BTCKu"
+  >
+    <div
+      className="sc-ifAKCX hNSfsz"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="sc-EHOje hcWBkz"
+        >
+          <div
+            className="sc-bZQynM kzlsZH"
+          >
+            <a
+              href="http://www.ca.gov"
+              onClick={[Function]}
+            >
+              <img
+                alt="CA Gov Logo"
+                className="sc-bwzfXH kToKGV"
+                src="_caGovLogo.svg"
+              />
+            </a>
+            <h1
+              className="sc-htpNat fdbPNz"
+            >
+              test title
+            </h1>
+          </div>
+          <a
+            className="sc-bxivhb iZtjbE"
+            href="/help"
+            onClick={[Function]}
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-fjdhpX bEPpVd"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="sc-jzJRlG erBDSg"
+        >
+          <a
+            className="sc-gzVnrw fXIzxI"
+            href="/"
+            onClick={[Function]}
+          >
+            <img
+              alt="CA Department of Technology logo"
+              className="sc-htoDjs ldEVX"
+              src="_odiLogo.png"
+            />
+          </a>
+          <ul
+            className="sc-VigVT irVmxZ"
+          >
+            <li
+              className="sc-iwsKbI gxIfsW"
+            >
+              <a
+                className="sc-gqjmRU kQUvaQ"
+                href="/"
+                onClick={[Function]}
+                style={undefined}
+              >
+                <span
+                  className="ca-gov-icon-home sc-gZMcBi kTnVNA sc-dnqmqq IZINt"
+                  size={32}
+                />
+                Home
+              </a>
+            </li>
+            <li
+              className="sc-iwsKbI gxIfsW"
+            >
+              <a
+                className="sc-gqjmRU kQUvaQ"
+                href="/help"
+                onClick={[Function]}
+                style={undefined}
+              >
+                <span
+                  className="ca-gov-icon-question-line sc-gZMcBi kTnVNA sc-dnqmqq IZINt"
+                  size={32}
+                />
+                Help
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div
+    className="sc-ckVGcZ bNznoT container"
+  >
+    <div>
+      child component
+    </div>
+  </div>
+  <footer
+    className="sc-kpOJdX duPZaW"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="sc-chPdSV frpnWz"
+      >
+        <a
+          className="sc-kGXeez fHFkbv"
+          href="http://www.ca.gov/Use"
+        >
+          Conditions of Use
+        </a>
+        <a
+          className="sc-kGXeez fHFkbv"
+          href="http://www.ca.gov/Privacy"
+        >
+          Privacy Policy
+        </a>
+        <a
+          className="sc-kGXeez fHFkbv"
+          href="http://www.ca.gov/Accessibility"
+        >
+          Accessibility
+        </a>
+        <a
+          className="sc-kgoBCf hHDmGV"
+          href="/help"
+          onClick={[Function]}
+        >
+          Contact Us
+        </a>
+        <div
+          className="sc-kAzzGY kqJGCL"
+        >
+          Version 
+          test 123
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

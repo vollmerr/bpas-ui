@@ -8,7 +8,7 @@ import theme from '../theme';
 const Wrapper = styled.li`
     text-align: ${props => props.isMobile ? 'left' : 'center'};
     flex: 1;
-    
+
     &:not(:last-child) {
       border-bottom: ${props => props.isMobile ? `1px solid ${theme.color.faded}` : 'none'};
     }
@@ -37,15 +37,10 @@ const StyledLink = styled(Link)`
     }
 `;
 
-const activeStyle = {
-    color: `${theme.color.primary}`,
-};
-
 /** Renders a single navbar link */
 function NavLink({
   link,
   isMobile,
-  mobileNavVisible,
   onClick,
 }) {
   return (
@@ -73,7 +68,6 @@ NavLink.PropTypes = {
     icon: PropTypes.string.isRequired,
   }).isRequired,
   isMobile: PropTypes.bool,
-  mobileNavVisible: PropTypes.bool,
   onClick: PropTypes.func,
 };
 

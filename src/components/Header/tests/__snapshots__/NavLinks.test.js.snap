@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavLinks /> renders correctly 1`] = `
+<ul
+  className="sc-ifAKCX hPeZMt"
+>
+  <li
+    className="sc-bwzfXH ijCGIH"
+  >
+    <a
+      className="sc-bxivhb LVLXz"
+      href="/"
+      onClick={[Function]}
+      style={undefined}
+    >
+      <span
+        className="ca-gov-icon-home sc-htpNat kaBJaH sc-bdVaJa dSgozt"
+        size={32}
+      />
+      Home
+    </a>
+  </li>
+  <li
+    className="sc-bwzfXH ijCGIH"
+  >
+    <a
+      className="sc-bxivhb LVLXz"
+      href="/help"
+      onClick={[Function]}
+      style={undefined}
+    >
+      <span
+        className="ca-gov-icon-question-line sc-htpNat kaBJaH sc-bdVaJa dSgozt"
+        size={32}
+      />
+      Help
+    </a>
+  </li>
+</ul>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavMobile /> renders correctly 1`] = `
+<a
+  className="sc-bwzfXH kqpNIz"
+  onClick={undefined}
+>
+  <span
+    className="ca-gov-icon-menu undefined sc-bdVaJa kKyQux"
+    size={36}
+  />
+</a>
+`;

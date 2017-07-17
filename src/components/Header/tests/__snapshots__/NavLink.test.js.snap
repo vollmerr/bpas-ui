@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavLink /> renders correctly 1`] = `
+<li
+  className="sc-bwzfXH ijCGIH"
+>
+  <a
+    className="sc-bxivhb LVLXz"
+    href="/test-href"
+    onClick={[Function]}
+    style={undefined}
+  >
+    <span
+      className="ca-gov-icon-home sc-htpNat kaBJaH sc-bdVaJa dSgozt"
+      size={32}
+    />
+    test text
+  </a>
+</li>
+`;
