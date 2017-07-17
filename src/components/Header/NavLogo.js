@@ -9,7 +9,7 @@ const Wrapper = styled(Link)`
 `;
 
 const Image = styled.img`
-  margin: ${props => props.isMobile ? '15px 0' : '0'};
+  margin: ${props => props.isMobile ? '15px 0' : '0 15px 0 0'};
   height: 60px;
 `;
 

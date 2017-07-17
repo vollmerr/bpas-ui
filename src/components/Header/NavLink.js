@@ -7,7 +7,8 @@ import theme from '../theme';
 
 const Wrapper = styled.li`
     text-align: ${props => props.isMobile ? 'left' : 'center'};
-
+    flex: 1;
+    
     &:not(:last-child) {
       border-bottom: ${props => props.isMobile ? `1px solid ${theme.color.faded}` : 'none'};
     }
@@ -23,7 +24,7 @@ const StyledIcon = styled(Icon)`
 const StyledLink = styled(Link)`
     display: block;
     color: inherit;
-    padding: ${theme.size.sm}px;
+    padding: ${theme.size.sm}px ${theme.size.xl}px;
 
     &:hover,
     &:focus,

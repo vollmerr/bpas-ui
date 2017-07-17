@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid } from 'react-bootstrap';
 import styled from 'styled-components';
+import { Container } from 'bpas-ui';
 import theme from '../theme';
 
 import NavLogo from './NavLogo';
@@ -9,7 +9,6 @@ import NavLinks from './NavLinks';
 import NavMobile from './NavMobile';
 
 const Wrapper = styled.div`
-  position: fixed;
   min-width: 100%;
   background: ${theme.color.primaryInverse};
   border-bottom: 5px solid ${theme.color.second};
@@ -49,13 +48,13 @@ function NavBar({
 
   return (
     <Wrapper>
-      <Grid>
+      <Container>
         <Content isMobile={isMobile}>
           <NavLogo {...navLogoProps} />
           {isMobile && <NavMobile {...navMobileProps} />}
           {displayLinks && <NavLinks {...navLinksProps} />}
         </Content>
-      </Grid>
+      </Container>
     </Wrapper>
   );
 }

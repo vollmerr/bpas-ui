@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import theme from '../theme';
 
 import TitleBar from './TitleBar';
 import NavBar from './NavBar';
+
+const Wrapper = styled.header`
+  height: ${theme.size.header}px;
+  margin-bottom: ${theme.size.lg}px;
+  position: relative;
+  z-index: ${theme.index.header}
+`;
 
 /** Renders the Header */
 class Header extends Component {
@@ -66,10 +74,10 @@ class Header extends Component {
     };
 
     return (
-      <header>
+      <Wrapper>
         <TitleBar {...titleBarProps} />
         <NavBar {...navBarProps} />
-      </header>
+      </Wrapper>
     );
   }
 }
