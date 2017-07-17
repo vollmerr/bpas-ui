@@ -1,12 +1,12 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import TitleLogo from '../TitleLogo';
 
 describe('<TitleLogo />', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(
+    const tree = shallow(
       <TitleLogo />
-    ).toJSON();
+    );
     expect(tree).toMatchSnapshot();
   });
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { testRouter } from '../../../utils/testUtils.js';
+import { shallow } from 'enzyme';
 import NavLink from '../NavLink';
 
 const testLink = {
@@ -11,9 +10,10 @@ const testLink = {
 
 describe('<NavLink />', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(
-      testRouter(<NavLink link={testLink} />)
-    ).toJSON();
+    const tree = shallow(
+      <NavLink link={testLink} />,
+      { context: {history: {}} }
+    );
     expect(tree).toMatchSnapshot();
   });
 

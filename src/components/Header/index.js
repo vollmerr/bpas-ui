@@ -57,7 +57,7 @@ class Header extends Component {
   }
 
   render() {
-    const { title } = this.props;
+    const { title, links } = this.props;
     const { isMobile, mobileNavVisible } = this.state;
 
     const titleBarProps = {
@@ -67,6 +67,7 @@ class Header extends Component {
     };
 
     const navBarProps = {
+      links,
       isMobile,
       mobileNavVisible,
       onClick: this.handleNavClose,

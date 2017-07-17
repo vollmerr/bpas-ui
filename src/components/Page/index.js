@@ -3,13 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../theme';
 
-import {
-  Header,
-  Footer,
-  DevBar,
-} from 'bpas-ui';
-
+import Header from '../Header';
 import Container from '../Container';
+import Footer from '../Footer';
 
 const Content = styled(Container)`
   min-height: ${theme.size.contentHeight}px;

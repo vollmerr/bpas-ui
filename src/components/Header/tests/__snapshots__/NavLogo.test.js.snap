@@ -1,15 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NavLogo /> renders correctly 1`] = `
-<a
-  className="sc-bdVaJa bSrzPW"
-  href="/"
-  onClick={[Function]}
+<Styled(Link)
+  to="/"
 >
-  <img
+  <styled.img
     alt="CA Department of Technology logo"
-    className="sc-bwzfXH kYVJeC"
     src="_odiLogo.png"
   />
-</a>
+</Styled(Link)>
 `;

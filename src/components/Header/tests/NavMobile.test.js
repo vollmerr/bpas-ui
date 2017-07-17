@@ -1,12 +1,12 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import NavMobile from '../NavMobile';
 
 describe('<NavMobile />', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(
+    const tree = shallow(
       <NavMobile />
-    ).toJSON();
+    );
     expect(tree).toMatchSnapshot();
   });
 

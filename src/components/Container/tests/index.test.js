@@ -1,5 +1,4 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import Container from '../';
 
@@ -8,11 +7,11 @@ describe('<Container />', () => {
   const testClass = 'test-class';
 
   it('renders correctly', () => {
-    const tree = renderer.create(
+    const tree = shallow(
       <Container>
         <Child />
       </Container>
-    ).toJSON();
+    );
     expect(tree).toMatchSnapshot();
   });
 

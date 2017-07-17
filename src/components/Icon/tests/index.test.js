@@ -1,14 +1,14 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import Icon from '../';
 
 const testIcon = 'home';
 
 describe('<Icon />', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(
+    const tree = shallow(
       <Icon icon={testIcon} />
-    ).toJSON();
+    );
     expect(tree).toMatchSnapshot();
   });
 

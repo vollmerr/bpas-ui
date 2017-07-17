@@ -3,11 +3,9 @@
 exports[`<TitleLogo /> renders correctly 1`] = `
 <a
   href="http://www.ca.gov"
-  onClick={undefined}
 >
-  <img
+  <styled.img
     alt="CA Gov Logo"
-    className="sc-bdVaJa jbboGG"
     src="_caGovLogo.svg"
   />
 </a>

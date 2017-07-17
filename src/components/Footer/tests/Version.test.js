@@ -1,14 +1,14 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import Version from '../Version';
 
 process.env.VERSION = 'test 123';
 
 describe('<Version />', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(
+    const tree = shallow(
       <Version />
-    ).toJSON();
+    );
     expect(tree).toMatchSnapshot();
   });
 });

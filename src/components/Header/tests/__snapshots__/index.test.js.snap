@@ -1,105 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header /> renders correctly 1`] = `
-<header
-  className="sc-iRbamj fTTYAa"
->
-  <div
-    className="sc-hMqMXs emBvIB"
-  >
-    <div
-      className="container"
-    >
-      <div
-        className="sc-kEYyzF bbYXyH"
-      >
-        <div
-          className="sc-kkGfuU fESlcU"
-        >
-          <a
-            href="http://www.ca.gov"
-            onClick={[Function]}
-          >
-            <img
-              alt="CA Gov Logo"
-              className="sc-ckVGcZ laVqmj"
-              src="_caGovLogo.svg"
-            />
-          </a>
-          <h1
-            className="sc-jKJlTe jllqoO"
-          >
-            test title
-          </h1>
-        </div>
-        <a
-          className="sc-eNQAEJ cgLvGw"
-          href="/help"
-          onClick={[Function]}
-        >
-          Contact Us
-        </a>
-      </div>
-    </div>
-  </div>
-  <div
-    className="sc-jDwBTQ hUzNZn"
-  >
-    <div
-      className="container"
-    >
-      <div
-        className="sc-gPEVay hJupVo"
-      >
-        <a
-          className="sc-iAyFgw kWLHyT"
-          href="/"
-          onClick={[Function]}
-        >
-          <img
-            alt="CA Department of Technology logo"
-            className="sc-hSdWYo hFdoUT"
-            src="_odiLogo.png"
-          />
-        </a>
-        <ul
-          className="sc-cMljjf kIGRaP"
-        >
-          <li
-            className="sc-cvbbAY crtSCu"
-          >
-            <a
-              className="sc-brqgnP fUWPIB"
-              href="/"
-              onClick={[Function]}
-              style={undefined}
-            >
-              <span
-                className="ca-gov-icon-home sc-jWBwVP iEILel sc-eHgmQL bcbtRs"
-                size={32}
-              />
-              Home
-            </a>
-          </li>
-          <li
-            className="sc-cvbbAY crtSCu"
-          >
-            <a
-              className="sc-brqgnP fUWPIB"
-              href="/help"
-              onClick={[Function]}
-              style={undefined}
-            >
-              <span
-                className="ca-gov-icon-question-line sc-jWBwVP iEILel sc-eHgmQL bcbtRs"
-                size={32}
-              />
-              Help
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header>
+<styled.header>
+  <TitleBar
+    isMobile={false}
+    onClick={[Function]}
+    title="test title"
+  />
+  <NavBar
+    isMobile={false}
+    mobileNavVisible={false}
+    onClick={[Function]}
+    onToggle={[Function]}
+  />
+</styled.header>
 `;

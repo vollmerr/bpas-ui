@@ -1,15 +1,15 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { testRouter } from '../../../utils/testUtils.js';
+import { shallow } from 'enzyme';
 import Header from '../';
 
 const testTitle = 'test title';
 
 describe('<Header />', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(
-      testRouter(<Header title={testTitle} />)
-    ).toJSON();
+    const tree = shallow(
+      <Header title={testTitle} />,
+      { context: {history: {}} }
+    );
     expect(tree).toMatchSnapshot();
   });
 

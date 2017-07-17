@@ -1,63 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NavBar /> renders correctly 1`] = `
-<div
-  className="sc-eHgmQL eTpHhA"
->
-  <div
-    className="container"
-  >
-    <div
-      className="sc-cvbbAY qTNyj"
+<styled.div>
+  <Container>
+    <styled.div
+      isMobile={false}
     >
-      <a
-        className="sc-ckVGcZ cKbtyJ"
-        href="/"
-        onClick={[Function]}
-      >
-        <img
-          alt="CA Department of Technology logo"
-          className="sc-jKJlTe htRAVe"
-          src="_odiLogo.png"
-        />
-      </a>
-      <ul
-        className="sc-iAyFgw elWWUU"
-      >
-        <li
-          className="sc-hMqMXs lfAwuE"
-        >
-          <a
-            className="sc-kkGfuU benGcc"
-            href="/"
-            onClick={[Function]}
-            style={undefined}
-          >
-            <span
-              className="ca-gov-icon-home sc-kEYyzF hqRVpj sc-eNQAEJ dKSPU"
-              size={32}
-            />
-            Home
-          </a>
-        </li>
-        <li
-          className="sc-hMqMXs lfAwuE"
-        >
-          <a
-            className="sc-kkGfuU benGcc"
-            href="/help"
-            onClick={[Function]}
-            style={undefined}
-          >
-            <span
-              className="ca-gov-icon-question-line sc-kEYyzF hqRVpj sc-eNQAEJ dKSPU"
-              size={32}
-            />
-            Help
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+      <NavLogo
+        isMobile={false}
+      />
+      <NavLinks
+        isMobile={false}
+      />
+    </styled.div>
+  </Container>
+</styled.div>
 `;

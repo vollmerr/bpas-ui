@@ -1,13 +1,13 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { testRouter } from '../../../utils/testUtils.js';
+import { shallow } from 'enzyme';
 import NavLinks from '../NavLinks';
 
-describe('<NavLinks />', () => {
+describe.only('<NavLinks />', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(
-      testRouter(<NavLinks />)
-    ).toJSON();
+    const tree = shallow(
+      <NavLinks />,
+      { context: {history: {}} }
+    );
     expect(tree).toMatchSnapshot();
   });
 

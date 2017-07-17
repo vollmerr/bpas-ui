@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Container } from 'bpas-ui';
 import theme from '../theme';
 
+import Container from '../Container';
 import NavLogo from './NavLogo';
 import NavLinks from './NavLinks';
 import NavMobile from './NavMobile';

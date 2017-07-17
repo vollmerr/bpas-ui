@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Container } from 'bpas-ui';
 import theme from '../theme';
 
+import Container from '../Container';
 import TitleLogo from './TitleLogo';
 import TitleText from './TitleText';
 import TitleLinks from './TitleLinks';

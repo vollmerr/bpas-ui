@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Icon /> renders correctly 1`] = `
-<span
-  className="ca-gov-icon-home undefined sc-bdVaJa iHmnvJ"
+<styled.span
+  className="ca-gov-icon-home undefined"
   size={20}
 />
 `;
