@@ -55,7 +55,7 @@ function createPackageFile() {
     } = packageData;
 
     const minimalPackage = {
-      name: 'ps-react',
+      name: 'bpas-ui',
       author,
       version,
       description,
