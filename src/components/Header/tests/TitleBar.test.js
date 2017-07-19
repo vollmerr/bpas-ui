@@ -1,19 +1,26 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import TitleBar from '../TitleBar';
+import TitleText from '../TitleText';
 
 const testTitle = 'test title';
 
 describe('<TitleBar />', () => {
-  it('renders correctly', () => {
-    const tree = shallow(
+
+  let actual;
+  beforeEach(() => {
+    actual = shallow(
       <TitleBar title={testTitle} />,
       { context: {history: {}} }
     );
-    expect(tree).toMatchSnapshot();
   });
 
-  xit('hides TitleText when isMobile', () => {});
+  it('renders correctly', () => {
+    expect(actual).toMatchSnapshot();
+  });
 
-  xit('passes the correct props down', () => {});
+  it('hides TitleText when isMobile', () => {
+    actual.setProps({isMobile: true});
+    expect(actual.find(TitleText).length).toEqual(0);
+  });
 });

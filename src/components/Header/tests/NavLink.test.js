@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import NavLink from '../NavLink';
 
+const noOp = () => {};
 const testLink = {
   text: 'test text',
   href: '/test-href',
@@ -9,15 +10,16 @@ const testLink = {
 };
 
 describe('<NavLink />', () => {
-  it('renders correctly', () => {
-    const tree = shallow(
-      <NavLink link={testLink} />,
+
+  let actual;
+  beforeEach(() => {
+    actual = shallow(
+      <NavLink link={testLink} onClick={noOp} />,
       { context: {history: {}} }
     );
-    expect(tree).toMatchSnapshot();
   });
 
-  xit('adds the active class when active', () => {});
-
-  xit('passes the correct props down', () => {});
+  it('renders correctly', () => {
+    expect(actual).toMatchSnapshot();
+  });
 });

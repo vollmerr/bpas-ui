@@ -26,3 +26,50 @@ exports[`<NavLinks /> renders correctly 1`] = `
   />
 </styled.ul>
 `;
+
+exports[`<NavLinks /> renders correctly 2`] = `
+<styled.ul
+  isMobile={false}
+>
+  <NavLink
+    isMobile={false}
+    link={
+      Object {
+        "href": "/sada",
+        "icon": "phone",
+        "text": "TEST 1",
+      }
+    }
+  />
+  <NavLink
+    isMobile={false}
+    link={
+      Object {
+        "href": "/",
+        "icon": "capitol",
+        "text": "test 2",
+      }
+    }
+  />
+  <NavLink
+    isMobile={false}
+    link={
+      Object {
+        "href": "/as",
+        "icon": "menu",
+        "text": "test 3",
+      }
+    }
+  />
+  <NavLink
+    isMobile={false}
+    link={
+      Object {
+        "href": "/stuff-asd",
+        "icon": "logo",
+        "text": "$%^&*()",
+      }
+    }
+  />
+</styled.ul>
+`;

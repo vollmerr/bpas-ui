@@ -6,10 +6,10 @@ process.env.VERSION = 'test 123';
 
 describe('<Footer />', () => {
   it('renders correctly', () => {
-    const tree = shallow(
+    const actual = shallow(
       <Footer />,
       { context: {history: {}} }
     );
-    expect(tree).toMatchSnapshot();
+    expect(actual).toMatchSnapshot();
   });
 });

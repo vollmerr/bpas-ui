@@ -3,11 +3,16 @@ import { shallow } from 'enzyme';
 import Links from '../Links';
 
 describe('<Links />', () => {
-  it('renders correctly', () => {
-    const tree = shallow(
+
+  let actual;
+  beforeEach(() => {
+    actual = shallow(
       <Links />,
       { context: {history: {}} }
     );
-    expect(tree).toMatchSnapshot();
+  });
+
+  it('renders correctly', () => {
+    expect(actual).toMatchSnapshot();
   });
 });

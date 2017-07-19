@@ -4,12 +4,10 @@ import TitleLinks from '../TitleLinks';
 
 describe('<TitleLinks />', () => {
   it('renders correctly', () => {
-    const tree = shallow(
+    const actual = shallow(
       <TitleLinks />,
       { context: {history: {}} }
     );
-    expect(tree).toMatchSnapshot();
+    expect(actual).toMatchSnapshot();
   });
-
-  xit('passes the correct props down', () => {});
 });

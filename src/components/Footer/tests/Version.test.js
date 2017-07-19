@@ -6,9 +6,9 @@ process.env.VERSION = 'test 123';
 
 describe('<Version />', () => {
   it('renders correctly', () => {
-    const tree = shallow(
+    const actual = shallow(
       <Version />
     );
-    expect(tree).toMatchSnapshot();
+    expect(actual).toMatchSnapshot();
   });
 });

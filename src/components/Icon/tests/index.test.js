@@ -6,11 +6,9 @@ const testIcon = 'home';
 
 describe('<Icon />', () => {
   it('renders correctly', () => {
-    const tree = shallow(
+    const actual = shallow(
       <Icon icon={testIcon} />
     );
-    expect(tree).toMatchSnapshot();
+    expect(actual).toMatchSnapshot();
   });
-
-  xit('passes the correct props down', () => {});
 });

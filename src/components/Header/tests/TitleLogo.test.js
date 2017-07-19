@@ -4,11 +4,9 @@ import TitleLogo from '../TitleLogo';
 
 describe('<TitleLogo />', () => {
   it('renders correctly', () => {
-    const tree = shallow(
+    const actual = shallow(
       <TitleLogo />
     );
-    expect(tree).toMatchSnapshot();
+    expect(actual).toMatchSnapshot();
   });
-
-  xit('passes the correct props down', () => {});
 });

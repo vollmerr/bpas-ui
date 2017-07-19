@@ -6,25 +6,22 @@ const Child = () => <div>child component</div>;
 const testTitle = 'test title';
 
 describe('<Page />', () => {
-  it('renders correctly', () => {
-    const tree = shallow(
+
+  let actual;
+  beforeEach(() => {
+    actual = shallow(
       <Page title={testTitle}>
         <Child />
       </Page>,
       { context: { history: {} } }
     );
-    expect(tree).toMatchSnapshot();
+  });
+
+  it('renders correctly', () => {
+    expect(actual).toMatchSnapshot();
   });
 
   it('renders its children', () => {
-    const wrapper = shallow(
-      <Page title={testTitle}>
-        <Child />
-      </Page>,
-      { context: { history: {} } }
-    );
-    expect(wrapper.contains(<Child />)).toEqual(true);
+    expect(actual.contains(<Child />)).toEqual(true);
   });
-
-  xit('passes the correct props down', () => { });
 });

@@ -4,11 +4,9 @@ import NavMobile from '../NavMobile';
 
 describe('<NavMobile />', () => {
   it('renders correctly', () => {
-    const tree = shallow(
+    const actual = shallow(
       <NavMobile />
     );
-    expect(tree).toMatchSnapshot();
+    expect(actual).toMatchSnapshot();
   });
-
-  xit('passes the correct props down', () => {});
 });

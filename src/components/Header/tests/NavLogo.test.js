@@ -4,12 +4,10 @@ import NavLogo from '../NavLogo';
 
 describe('<NavLogo />', () => {
   it('renders correctly', () => {
-    const tree = shallow(
+    const actual = shallow(
       <NavLogo />,
       { context: {history: {}} }
     );
-    expect(tree).toMatchSnapshot();
+    expect(actual).toMatchSnapshot();
   });
-
-  xit('passes the correct props down', () => {});
 });

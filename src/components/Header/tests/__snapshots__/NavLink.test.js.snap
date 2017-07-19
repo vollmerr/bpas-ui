@@ -4,6 +4,7 @@ exports[`<NavLink /> renders correctly 1`] = `
 <styled.li>
   <Styled(NavLink)
     exact={false}
+    onClick={[Function]}
     to="/test-href"
   >
     <Styled(Icon)

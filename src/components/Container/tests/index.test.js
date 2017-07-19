@@ -6,30 +6,26 @@ describe('<Container />', () => {
   const Child = () => <div>child component</div>;
   const testClass = 'test-class';
 
-  it('renders correctly', () => {
-    const tree = shallow(
+  let actual;
+  beforeEach(() => {
+    actual = shallow(
       <Container>
         <Child />
       </Container>
     );
-    expect(tree).toMatchSnapshot();
+  });
+
+  it('renders correctly', () => {
+    expect(actual).toMatchSnapshot();
   });
 
   it('renders its children', () => {
-    const wrapper = shallow((
-      <Container>
-        <Child />
-      </Container>
-    ));
-    expect(wrapper.contains(<Child />)).toEqual(true);
+    expect(actual.contains(<Child />)).toEqual(true);
   });
 
   it('accepts addditional props', () => {
-    const wrapper = shallow(
-      <Container className={testClass}>
-        <Child />
-      </Container>
-    );
-    expect(wrapper.props()).toHaveProperty('className', testClass);
+    actual.setProps({className: testClass});
+    
+    expect(actual.props()).toHaveProperty('className', testClass);
   });
 });

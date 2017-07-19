@@ -1,19 +1,40 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import NavBar from '../NavBar';
+import NavMobile from '../NavMobile';
+import NavLinks from '../NavLinks';
 
 describe('<NavBar />', () => {
-  it('renders correctly', () => {
-    const tree = shallow(
+
+  let actual;
+  beforeEach(() => {
+    actual = shallow(
       <NavBar />,
       { context: {history: {}} }
     );
-    expect(tree).toMatchSnapshot();
   });
 
-  xit('hides NavMobile when isMobile', () => {});
+  it('renders correctly', () => {
+    expect(actual).toMatchSnapshot();
+  });
 
-  xit('displays NavLinks when mobileNavVisible or NOT isMobile', () => {});
+  it('hides NavMobile when isMobile', () => {
+    actual.setProps({isMobile: false});
+    expect(actual.find(NavMobile).length).toEqual(0);
 
-  xit('passes the correct props down', () => {});
+    actual.setProps({isMobile: true});
+    expect(actual.find(NavMobile).length).toEqual(1);
+  });
+
+  it('displays NavLinks when mobileNavVisible or NOT isMobile', () => {
+    actual.setProps({isMobile: false});
+    expect(actual.find(NavLinks).length).toEqual(1);
+
+    actual.setProps({mobileNavVisible: true});
+    expect(actual.find(NavLinks).length).toEqual(1);
+
+    actual.setProps({isMobile: true});
+    actual.setProps({mobileNavVisible: false});
+    expect(actual.find(NavLinks).length).toEqual(0);
+  });
 });

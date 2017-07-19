@@ -6,9 +6,9 @@ const testTitle = 'test title';
 
 describe('<TitleText />', () => {
   it('renders correctly', () => {
-    const tree = shallow(
+    const actual = shallow(
       <TitleText title={testTitle} />
     );
-    expect(tree).toMatchSnapshot();
+    expect(actual).toMatchSnapshot();
   });
 });
