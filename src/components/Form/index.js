@@ -110,7 +110,7 @@ class Form extends Component {
 
 
 /** Wrapper for Fields */
-function Section({
+export function Section({
   container,
   ...props,
 }) {
@@ -124,7 +124,7 @@ function Section({
 
 
 /** Renders a group of form fields */
-function Fields({
+export function Fields({
   fields,
   width,
 }) {
@@ -141,7 +141,7 @@ function Fields({
 
 import FormGroup from 'react-bootstrap/lib/FormGroup';
 /** Renders a single form field */
-function Field({
+export function Field({
   field,
   width,
 }) {
@@ -174,7 +174,7 @@ function Field({
 
 import ControlLabel from 'react-bootstrap/lib/ControlLabel';
 /** Displays fields label */
-function Label({
+export function Label({
   name,
   label,
 }) {
@@ -190,7 +190,7 @@ function Label({
 
 import FormControl from 'react-bootstrap/lib/FormControl';
 /** Generic text input */
-function Text({
+export function Text({
   name,
   field,
 }) {
@@ -209,12 +209,20 @@ function Text({
 //   placeholder,
 
 
+export function Select() {
+  return (
+    <FormControl componentClass={'select'}>
+      <option value="first">First</option>
+      <option value="second">Second</option>
+    </FormControl>
+  );
+}
 
 
 
 import HelpBlock from 'react-bootstrap/lib/HelpBlock';
 /** Displays fields the error message */
-function Error({
+export function Error({
   error,
 }) {
   return (
