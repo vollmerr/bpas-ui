@@ -18,6 +18,8 @@
 
 # stories
 
+- add redux / provider / redux-form
+
 - different color background for white items
 - look at chapters addon
 - refine/add to only what is wanted
@@ -40,3 +42,4 @@
   - input for text/textarea
   - input for checkbox
   - input for radios
+  - input for select

@@ -2,9 +2,9 @@ export default {
   color: {
     primary: '#046b99',
     primaryInverse: '#ffffff',
+    primaryFaded: '#9fc7da',
     second: '#fdb81e',
-
-    faded: '#9fc7da',
+    alert: '#a80000',
     bold: '#222222',
   },
 

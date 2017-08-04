@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Form } from 'bpas-ui';
+import Provider from './utils/Provider.js';
 
 import {
   Text,
@@ -9,10 +10,16 @@ import {
 } from '../src/components/Form';
 
 storiesOf('Form')
+  .addDecorator(story =>
+    <Provider>{story()}</Provider>
+  )
   .add('<Form />', () => <Form />)
   .add('Text', () => <Text />)
   .add('Select', () => <Select />)
   .add('Field', () => <Field />);
+
+
+
 // const testData = {
 //   test1: {
 //     onChange: () => {console.log('custom change!')},

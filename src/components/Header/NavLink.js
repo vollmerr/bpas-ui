@@ -10,14 +10,14 @@ const Wrapper = styled.li`
     flex: 1;
 
     &:not(:last-child) {
-      border-bottom: ${props => props.isMobile ? `1px solid ${theme.color.faded}` : 'none'};
+      border-bottom: ${props => props.isMobile ? `1px solid ${theme.color.primaryFaded}` : 'none'};
     }
 `;
 
 const StyledIcon = styled(Icon)`
     display: ${props => props.isMobile ? 'inline-block' : 'block'};
     vertical-align: ${props => props.isMobile ? 'middle' : 'baseline'};
-    color: ${theme.color.faded};
+    color: ${theme.color.primaryFaded};
     padding-right: ${props => props.isMobile ? '10px' : '0'};
 `;
 
