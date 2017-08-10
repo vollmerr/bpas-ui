@@ -6,6 +6,7 @@ import theme from '../theme';
 const Links = styled(Link)`
   color: #fff;
   padding: ${theme.size.xs}px;
+  transition: all 0.25s;
 
   &:hover,
   &:focus {

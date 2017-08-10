@@ -11,7 +11,7 @@ import theme from '../theme';
 const StyledIcon = styled(Icon)`
   margin-left: 5px;
   cursor: pointer;
-  color: ${theme.color.primaryFaded};
+  color: ${theme.color.boldFaded};
   &:hover {
     color: ${theme.color.primary};
   }

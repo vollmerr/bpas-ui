@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import FormGroup from 'react-bootstrap/lib/FormGroup';
 import ControlLabel from 'react-bootstrap/lib/ControlLabel';
@@ -7,7 +8,16 @@ import FormControl from 'react-bootstrap/lib/FormControl';
 import HelpBlock from 'react-bootstrap/lib/HelpBlock';
 
 import Label from '../Label';
+import theme from '../theme';
 
+// TODO: fix disabled background (still use bootstrap...)
+const Input = styled(FormControl)`
+  text-overflow: ellipsis;
+  border-radius: 0;
+  height: 36px;
+  font-size: ${theme.font.md}px;
+  background: ${props => props.disabled ? theme.color.darkGrey : 'inherit'};
+`;
 
 /** Generic text input */
 function InputText({
@@ -77,7 +87,7 @@ function InputText({
   return (
     <FormGroup controlId={name} validationState={invalidState}>
       <Label {...labelProps} />
-      <FormControl {...inputProps} />
+      <Input {...inputProps} />
       {invalidState && <HelpBlock>{error}</HelpBlock>}
     </FormGroup>
   );

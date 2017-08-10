@@ -6,6 +6,7 @@ import theme from '../theme';
 const Text = styled.h1`
   color: ${theme.color.primaryInverse};
   font-size: ${theme.font.lg}px;
+  font-weight: 400;
   padding: ${theme.size.xs}px;
   margin: 0;
   line-height: inherit;

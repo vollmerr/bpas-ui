@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../theme';
 
+import GlobalStyle from '../GlobalStyle';
 import Header from '../Header';
 import Container from '../Container';
 import Footer from '../Footer';
@@ -22,13 +23,13 @@ function Page({
   };
 
   return (
-    <div>
+    <GlobalStyle>
       <Header {...headerProps} />
       <Content>
         {children}
       </Content>
       <Footer />
-    </div>
+    </GlobalStyle>
   );
 }
 

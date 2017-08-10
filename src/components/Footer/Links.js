@@ -27,6 +27,7 @@ const StyledLink = styled(Link)`
   white-space: nowrap;
   min-width: 150px;
   display: flex;
+  transition: all 0.25s;
 
   &:hover,
   &:focus {

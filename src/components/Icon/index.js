@@ -5,26 +5,29 @@ import './style.css';
 
 const StyledIcon = styled.span`
   font-size: ${(props) => props.size}px;
+  transition: all 0.25s;
 `;
 
 /** Renders an icon */
 function Icon({
     icon,
-    className,
-    size = 20,
-    ...props,
+  className,
+  size = 20,
+  ...props,
 }) {
-    return (<StyledIcon
+  return (
+    <StyledIcon
       className={`ca-gov-icon-${icon} ${className}`}
       size={size}
       {...props}
-    />);
+    />
+  );
 }
 
 Icon.propTypes = {
-    icon: PropTypes.string.isRequired,
-    className: PropTypes.string,
-    size: PropTypes.number,
+  icon: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  size: PropTypes.number,
 };
 
 export default Icon;

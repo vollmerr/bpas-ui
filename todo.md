@@ -3,22 +3,10 @@
 ## general
 
 - body background
-
-
-# tests...
-
-## Header
-
-## Page
-
-## Footer
-
-## Icon
+- get values form state / boottstrap for theme values and naming.
 
 
 # stories
-
-- add redux / provider / redux-form
 
 - different color background for white items
 - look at chapters addon

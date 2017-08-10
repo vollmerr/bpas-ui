@@ -5,7 +5,10 @@ export default {
     primaryFaded: '#9fc7da',
     second: '#fdb81e',
     alert: '#a80000',
-    bold: '#222222',
+    bold: '#333333',
+    boldFaded: '#777777',
+    lightGrey: '#efefef',
+    darkGrey: '#d6d6d6',
   },
 
   size: {
@@ -25,7 +28,7 @@ export default {
   font: {
     xs: 10,
     sm: 14,
-    md: 18,
+    md: 16,
     lg: 22,
     xl: 26,
   },
