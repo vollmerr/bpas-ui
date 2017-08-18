@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Icon from '../Icon';
-import theme from '../theme';
+import theme from '../../util/theme';
 
 const Wrapper = styled.li`
     text-align: ${props => props.isMobile ? 'left' : 'center'};

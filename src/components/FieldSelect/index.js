@@ -1,28 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Field } from 'redux-form';
+
 import { isEmptyText } from '../../util/validate';
-
-import InputText from './InputText';
-
-
-// meta,
-// input,
-// label,
-//   onBlur,
-//   onFocus,
-//   onChange,
-//   tooltip = '',
-//   type = 'text',
-//   required = false,
-//   disabled = false,
-//   placeholder = '',
-//   autoComplete = 'off',
-//   componentClass = 'text',
+import InputSelect from './InputSelect';
 
 
 function FieldInput({
-  name,
   required,
   disabled,
   validate,
@@ -45,11 +29,10 @@ function FieldInput({
 
   return (
     <Field
-      name={name}
       disabled={disabled}
       required={isRequired}
       validate={toValidate}
-      component={InputText}
+      component={InputSelect}
       {...props}
     />
   );

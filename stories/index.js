@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 
+import './FieldDateStory';
+import './FieldSelectStory';
 import './FieldTextStory';
 
 // import './WizardStory';

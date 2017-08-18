@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { FieldText } from 'bpas-ui';
+import { FieldDate } from 'bpas-ui';
 import Provider from './utils/Provider';
 import ReduxForm from './utils/ReduxForm';
 import Col from 'react-bootstrap/lib/Col';
@@ -14,7 +14,7 @@ const widths = [
   3
 ];
 
-storiesOf('FieldText')
+storiesOf('FieldDate')
   .addDecorator(story =>
     <Provider story={story} />
   )
@@ -24,7 +24,7 @@ storiesOf('FieldText')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldText
+              <FieldDate
                 name={`basic_${width}`}
                 label={`Text input (xs-${width})`}
               />
@@ -40,7 +40,7 @@ storiesOf('FieldText')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldText
+              <FieldDate
                 icon
                 name={`tooltip_${width}`}
                 label={`Text Tnput with Tooltip (xs-${width})`}
@@ -58,7 +58,7 @@ storiesOf('FieldText')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldText
+              <FieldDate
                 required
                 name={`tooltip_${width}`}
                 label={`Required Text Input (xs-${width})`}
@@ -76,7 +76,7 @@ storiesOf('FieldText')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldText
+              <FieldDate
                 disabled
                 name={`disabled_${width}`}
                 label={`Disabled Text Input (xs-${width})`}
@@ -90,7 +90,7 @@ storiesOf('FieldText')
   ))
   .add('Custom onChange', () => (
     <ReduxForm>
-      <FieldText
+      <FieldDate
         name={'name4'}
         label={'Text input onChange'}
         onChange={(event, newValue, previousValue) => {

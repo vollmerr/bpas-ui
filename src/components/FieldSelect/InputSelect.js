@@ -12,7 +12,7 @@ import { newOnBlur, newOnFocus, newOnChange } from '../../util/reduxForm';
 import Label from '../Label';
 
 // TODO: fix disabled background (still use bootstrap...)
-const Input = styled(FormControl)`
+const Input = styled(FormControl) `
   text-overflow: ellipsis;
   border-radius: 0;
   height: 36px;
@@ -21,13 +21,15 @@ const Input = styled(FormControl)`
 `;
 
 /** Generic text input */
-function InputText({
+function InputSelect({
   meta,
   input,
   label,
   onBlur,
   onFocus,
   onChange,
+  options,
+  hideBlank,
   icon = true,
   tooltip = '',
   type = 'text',
@@ -35,7 +37,7 @@ function InputText({
   disabled = false,
   placeholder = '',
   autoComplete = 'off',
-  componentClass = 'input',
+  componentClass = 'select',
 }) {
   const { name } = input;
   const { touched, error } = meta;
@@ -55,26 +57,33 @@ function InputText({
   const inputProps = {
     ...input,
     type,
-    onBlur: newOnBlur(onBlur, input),
-    onFocus: newOnFocus(onFocus, input),
-    onChange: newOnChange(onChange, input),
     disabled,
     autoComplete,
     componentClass,
+    onBlur: newOnBlur(onBlur, input),
+    onFocus: newOnFocus(onFocus, input),
+    onChange: newOnChange(onChange, input),
     placeholder: newPlaceholder,
   };
 
   return (
     <FormGroup controlId={name} validationState={invalidState}>
       <Label {...labelProps} />
-      <Input {...inputProps} />
+      <Input {...inputProps}>
+        {!hideBlank && <option />}
+        {
+          options.map(option => (
+            <option key={option.value} value={option.value}>{option.label}</option>
+          ))
+        }
+      </Input>
       {invalidState && <HelpBlock>{error}</HelpBlock>}
     </FormGroup>
   );
 }
 
 // TODO: add proptypes
-InputText.propTypes = {
+InputSelect.propTypes = {
   input: PropTypes.shape({
     name: PropTypes.string.isRequired,
     onChange: PropTypes.func,
@@ -89,4 +98,4 @@ InputText.propTypes = {
   }).isRequired,
 };
 
-export default InputText;
+export default InputSelect;

@@ -1,28 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Field } from 'redux-form';
-import { isEmptyText } from '../../util/validate';
 
-import InputText from './InputText';
-
-
-// meta,
-// input,
-// label,
-//   onBlur,
-//   onFocus,
-//   onChange,
-//   tooltip = '',
-//   type = 'text',
-//   required = false,
-//   disabled = false,
-//   placeholder = '',
-//   autoComplete = 'off',
-//   componentClass = 'text',
+import { isEmptyDate } from '../../util/validate';
+import InputDate from './InputDate';
 
 
-function FieldInput({
-  name,
+function FieldDate({
   required,
   disabled,
   validate,
@@ -35,27 +19,26 @@ function FieldInput({
     isRequired = required;
 
     if (validate && isRequired) {
-      toValidate = [isEmptyText, ...validate];
+      toValidate = [isEmptyDate, ...validate];
     } else if (validate) {
       toValidate = [...validate];
     } else if (isRequired) {
-      toValidate = isEmptyText;
+      toValidate = isEmptyDate;
     }
   }
 
   return (
     <Field
-      name={name}
       disabled={disabled}
       required={isRequired}
       validate={toValidate}
-      component={InputText}
+      component={InputDate}
       {...props}
     />
   );
 };
 
-FieldInput.propTypes = {
+FieldDate.propTypes = {
   // name: PropTypes.string.isRequired,
   // required: PropTypes.bool.isRequired,
   // validate: PropTypes.array.isRequired,
@@ -64,7 +47,7 @@ FieldInput.propTypes = {
   // hideTooltip: PropTypes.bool.isRequired,
 };
 
-FieldInput.defaultProps = {
+FieldDate.defaultProps = {
   // required: false,
   // validate: [],
   // allDisabled: false,
@@ -72,4 +55,4 @@ FieldInput.defaultProps = {
   // hideTooltip: false,
 }
 
-export default FieldInput;
+export default FieldDate;

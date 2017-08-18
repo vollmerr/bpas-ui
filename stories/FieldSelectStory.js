@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { FieldText } from 'bpas-ui';
+import { FieldSelect } from 'bpas-ui';
 import Provider from './utils/Provider';
 import ReduxForm from './utils/ReduxForm';
 import Col from 'react-bootstrap/lib/Col';
@@ -14,7 +14,14 @@ const widths = [
   3
 ];
 
-storiesOf('FieldText')
+const options = [
+  { label: 'Option 1 Label', value: 'Option 1 Value' },
+  { label: 'Option 2 Label', value: 'Option 2 Value' },
+  { label: 'Option 3 Label', value: 'Option 3 Value' },
+  { label: 'Option 4 Label', value: 'Option 4 Value' },
+]
+
+storiesOf('FieldSelect')
   .addDecorator(story =>
     <Provider story={story} />
   )
@@ -24,9 +31,10 @@ storiesOf('FieldText')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldText
+              <FieldSelect
+                options={options}
                 name={`basic_${width}`}
-                label={`Text input (xs-${width})`}
+                label={`Select input (xs-${width})`}
               />
             </Col>
           </Row>
@@ -40,10 +48,11 @@ storiesOf('FieldText')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldText
+              <FieldSelect
                 icon
+                options={options}
                 name={`tooltip_${width}`}
-                label={`Text Tnput with Tooltip (xs-${width})`}
+                label={`Select Tnput with Tooltip (xs-${width})`}
                 tooltip={'This is a tooltip.'}
               />
             </Col>
@@ -58,10 +67,11 @@ storiesOf('FieldText')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldText
+              <FieldSelect
                 required
+                options={options}
                 name={`tooltip_${width}`}
-                label={`Required Text Input (xs-${width})`}
+                label={`Required Select Input (xs-${width})`}
                 tooltip={'This is a tooltip.'}
               />
             </Col>
@@ -76,10 +86,11 @@ storiesOf('FieldText')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldText
+              <FieldSelect
                 disabled
+                options={options}
                 name={`disabled_${width}`}
-                label={`Disabled Text Input (xs-${width})`}
+                label={`Disabled Select Input (xs-${width})`}
                 tooltip={'This is a tooltip.'}
               />
             </Col>
@@ -90,9 +101,10 @@ storiesOf('FieldText')
   ))
   .add('Custom onChange', () => (
     <ReduxForm>
-      <FieldText
+      <FieldSelect
+        options={options}
         name={'name4'}
-        label={'Text input onChange'}
+        label={'Select input onChange'}
         onChange={(event, newValue, previousValue) => {
           console.log(
             'event: ', event,

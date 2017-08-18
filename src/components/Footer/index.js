@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import theme from '../theme';
+import theme from '../../util/theme';
 
 import Container from '../Container';
 import Links from './Links';

@@ -34,7 +34,7 @@ export const isValidPhone = value => (
   : undefined
 );
 
-export const isInvalidDate = value => (
+export const isEmptyDate = value => (
   !value
   ? 'Invalid Date, plase select from the date picker.'
   : undefined

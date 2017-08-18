@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from '../theme';
+import theme from '../../util/theme';
 
 import TitleBar from './TitleBar';
 import NavBar from './NavBar';

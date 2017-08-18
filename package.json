@@ -11,6 +11,7 @@
   ],
   "dependencies": {
     "bootstrap": "3",
+    "pikaday": "^1.6.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",

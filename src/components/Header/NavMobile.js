@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import theme from '../../util/theme';
 import Icon from '../Icon';
-import theme from '../theme';
 
 
 const Menu = styled.a`

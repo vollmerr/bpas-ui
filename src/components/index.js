@@ -11,5 +11,7 @@ export { default as Form } from './Form';
 export { default as Wizard } from './Wizard';
 
 export { default as Tooltip } from './Tooltip';
-export { default as FieldText } from './FieldText';
 
+export { default as FieldText } from './FieldText';
+export { default as FieldSelect } from './FieldSelect';
+export { default as FieldDate } from './FieldDate';
