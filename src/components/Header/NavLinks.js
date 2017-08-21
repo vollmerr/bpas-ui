@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import NavLink from './NavLink';
-import theme from '../../util/theme';
+import theme from '../util/theme';
 
 const defaultLinks = [
   { text: 'Home', href: '/', icon: 'home' },

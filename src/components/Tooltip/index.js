@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import Popover from 'react-bootstrap/lib/Popover';
 import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger';
-import theme from '../../util/theme';
+import theme from '../util/theme';
 
 import Icon from '../Icon';
 

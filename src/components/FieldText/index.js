@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Field } from 'redux-form';
-import { isEmptyText } from '../../util/validate';
+import { isEmptyText } from '../util/validate';
 
 import InputText from './InputText';
 

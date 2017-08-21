@@ -8,8 +8,8 @@ import FormControl from 'react-bootstrap/lib/FormControl';
 import HelpBlock from 'react-bootstrap/lib/HelpBlock';
 import Radio from 'react-bootstrap/lib/Radio';
 
-import theme from '../../util/theme';
-import { newOnBlur, newOnFocus, newOnChange } from '../../util/reduxForm';
+import theme from '../util/theme';
+import { newOnBlur, newOnFocus, newOnChange } from '../util/reduxForm';
 
 import Label from '../Label';
 
@@ -41,7 +41,7 @@ const getLabelStatus = ({ disabled = false, checked = false }) => {
   `;
 };
 
-const StyledLabel = styled(Label) `
+const StyledLabel = styled(Label)`
   &:before {
     border-radius: 100%;
     border: 1px solid;
@@ -60,9 +60,9 @@ const StyledLabel = styled(Label) `
     ${props => getLabelStatus(props)}
   }
 
+  font-weight: 400;
   padding-left: 0;
   cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
-
 `;
 
 const InputRadio = ({ name, value, option, disabled }) => {

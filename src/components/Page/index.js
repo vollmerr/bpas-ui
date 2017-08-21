@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from '../../util/theme';
+import theme from '../util/theme';
 
 import GlobalStyle from '../GlobalStyle';
 import Header from '../Header';

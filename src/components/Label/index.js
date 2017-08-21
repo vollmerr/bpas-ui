@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import ControlLabel from 'react-bootstrap/lib/ControlLabel';
-import theme from '../../util/theme';
+import theme from '../util/theme';
 
 import Tooltip from '../Tooltip';
 

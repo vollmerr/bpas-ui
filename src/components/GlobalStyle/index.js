@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import theme from '../../util/theme';
+import theme from '../util/theme';
+import './ca-gov-core.css';
 
 const Wrapper = styled.div`
   font-family: "Source Sans Pro", sans-serif;

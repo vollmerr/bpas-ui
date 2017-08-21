@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Field } from 'redux-form';
 
-import { isEmptyDate } from '../../util/validate';
+import { isEmptyDate } from '../util/validate';
 import InputDate from './InputDate';
 
 

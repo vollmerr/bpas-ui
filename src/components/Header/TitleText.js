@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from '../../util/theme';
+import theme from '../util/theme';
 
 const Text = styled.h1`
   color: ${theme.color.grey.white};

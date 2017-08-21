@@ -1,8 +1,9 @@
-# BPAS UI
+# BPAS UI 
 
-This project is for common react components used in BPAS projects. It uses [Create React App](https://github.com/facebookincubator/create-react-app) as its foundation, and is based off the California State Template for styling.
+[This project](https://github.com/vollmerr/bpas-ui) is for common react components used in BPAS projects. It uses [Create React App](https://github.com/facebookincubator/create-react-app) as its foundation, and is based off the California State Template for styling.
 
 This is a work in progress. More instructions and components to come!
+
 
 ## Quick Start
 
@@ -45,12 +46,11 @@ npm i -S bpas-ui styled-components react-router-dom bootstrap@3
 import 'bootstrap/dist/css/bootstrap.css';
 ```
 
-7. Add links/routing and a title. For example in App.js
+7. Add links/routing and a title. For example in /src/containers/index.js
 
 ```
 import React, { Component } from 'react';
 import { Page } from 'bpas-ui';
-import 'bootstrap/dist/css/bootstrap.css';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
 
@@ -84,24 +84,63 @@ class App extends Component {
 export default App;
 ```
 
-Then in index.js wrap the app in the router
+8. In /src/index.js wrap the app in the router and redux
 
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import App from './App';
+import { Provider } from 'react-redux';
+import configureStore from './store/configureStore';
+import App from './containers';
+
+const store = configureStore();
 
 ReactDOM.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>, 
-    document.getElementById('root')
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>, 
+  document.getElementById('root')
 );
-
 ```
 
-8. Run the application (should automatically open at [localhost:3000](http://localhost:3000))
+9. Add the base store configuration in /src/store/configureStore.js
+
+```
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunkMiddleware from 'redux-thunk';
+import rootReducer from '../reducers';
+
+const composeEnhancers = window['__REDUX_DEVTOOLS_EXTENSION_COMPOSE__'] || compose;
+
+export default function configureStore(initialState) {
+
+    const middleWares = [
+        thunkMiddleware,
+    ];
+
+    const enhancer = composeEnhancers(applyMiddleware(...middleWares));
+
+    return createStore(rootReducer, initialState, enhancer);
+}
+```
+
+10. Add the root reducer (initally just redux-form) in /src/reducers/index.js
+
+```
+import { combineReducers } from 'redux';
+import { reducer as form } from 'redux-form';
+
+const rootReducer = combineReducers({
+  form,
+});
+
+export default rootReducer;
+```
+
+11. Run the application (should automatically open at [localhost:3000](http://localhost:3000))
 
 ```
 npm start
