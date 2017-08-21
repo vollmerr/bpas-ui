@@ -11,7 +11,7 @@ const Links = styled(Link)`
   &:hover,
   &:focus {
     text-decoration: none;
-    color: ${theme.color.second};
+    color: ${theme.color.accent.yellow};
   }
 `;
 

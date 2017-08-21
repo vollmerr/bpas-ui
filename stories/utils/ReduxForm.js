@@ -1,25 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { reduxForm } from 'redux-form';
 
-const ReduxForm = (props) => {
-  const { handleSubmit, pristine, reset, submitting, children } = props;
-  const onSubmit = (vals) => console.log('Submitting: ', vals);
+class ReduxForm extends Component {
+  componentDidMount() {
+    const { init, change } = this.props;
+    if (init) {
+      Object.keys(init).forEach(key => change(key, init[key]));
+    }
+  }
 
-  return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      {children}
-      <div>
-        <button type="submit">
-          Submit
-        </button>
-        <button type="button" onClick={reset}>
-          Clear Values
-        </button>
-      </div>
-    </form>
-  );
+  render() {
+    const { handleSubmit, change, pristine, reset, submitting, children, init } = this.props;
+    const onSubmit = (vals) => console.log('Submitting: ', vals);
+
+    return (
+      <form onSubmit={handleSubmit(onSubmit)}>
+        {children}
+        <div>
+          <button type="submit">
+            Submit
+          </button>
+          <button type="button" onClick={reset}>
+            Clear Values
+          </button>
+        </div>
+      </form>
+    );
+  }
 }
 
 export default reduxForm({
-  form: 'story' // a unique identifier for this form
+  form: 'story'
 })(ReduxForm);

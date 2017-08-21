@@ -6,7 +6,7 @@ import Icon from '../Icon';
 
 
 const Menu = styled.a`
-  color: ${theme.color.primary};
+  color: ${theme.color.theme.primary};
   cursor: pointer;
   float: right;
   margin-top: 1.2em;

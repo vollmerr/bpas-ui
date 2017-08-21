@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import theme from '../../util/theme';
 
 const Text = styled.h1`
-  color: ${theme.color.primaryInverse};
+  color: ${theme.color.grey.white};
   font-size: ${theme.font.lg}px;
   font-weight: 400;
   padding: ${theme.size.xs}px;

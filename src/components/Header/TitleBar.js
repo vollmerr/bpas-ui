@@ -9,7 +9,7 @@ import TitleText from './TitleText';
 import TitleLinks from './TitleLinks';
 
 const Wrapper = styled.div`
-  background: ${theme.color.primary};
+  background: ${theme.color.theme.primary};
   height: ${theme.size.titleBar}px;
 `;
 

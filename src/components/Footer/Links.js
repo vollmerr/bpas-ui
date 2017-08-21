@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-  color: ${theme.color.primaryInverse};
+  color: ${theme.color.grey.white};
   white-space: nowrap;
   min-width: 150px;
   display: flex;
@@ -31,7 +31,7 @@ const StyledLink = styled(Link)`
 
   &:hover,
   &:focus {
-    color: ${theme.color.second};
+    color: ${theme.color.accent.yellow};
   }
 `;
 

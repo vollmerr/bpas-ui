@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   text-align: right;
   padding: ${theme.size.xs}px ${theme.size.sm}px;
   white-space: nowrap;
-  color: ${theme.color.primaryInverse};
+  color: ${theme.color.grey.white};
 `;
 
 function Version() {

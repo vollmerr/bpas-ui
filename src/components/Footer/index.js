@@ -9,7 +9,7 @@ const Wrapper = styled.footer`
   min-height: ${theme.size.footer}px;
   display: flex;
   align-items: center;
-  background: ${theme.color.bold};
+  background: ${theme.color.grey.dark};
 `;
 
 /** Renders the title bars logo  */

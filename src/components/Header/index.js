@@ -10,7 +10,8 @@ const Wrapper = styled.header`
   height: ${theme.size.header}px;
   margin-bottom: ${theme.size.lg}px;
   position: relative;
-  z-index: ${theme.index.header}
+  z-index: ${theme.index.header};
+  min-width: ${theme.size.contentWidth}px;
 `;
 
 /** Renders the Header */

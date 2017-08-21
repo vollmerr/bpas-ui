@@ -1,14 +1,33 @@
 export default {
   color: {
-    primary: '#046b99',
-    primaryInverse: '#ffffff',
-    primaryFaded: '#9fc7da',
-    second: '#fdb81e',
-    alert: '#a80000',
-    bold: '#333333',
-    boldFaded: '#777777',
-    lightGrey: '#efefef',
-    darkGrey: '#d6d6d6',
+    theme: {
+      darker: '',
+      dark: '',
+      darkAlt: '',
+      primary: '#046b99',
+      secondary: '',
+      tertiary: '#9fc7da',
+      light: '',
+      lighter: '',
+      lighterAlt: '',
+    },
+    grey: {
+      black: '#000000',
+      dark: '#212121',
+      primary: '#333333',
+      secondary: '#666666',
+      tertiary: '#a6a6a6',
+      light: '#eaeaea',
+      lighter: '#f4f4f4',
+      lighterAlt: '#f8f8f8',
+      white: '#ffffff',
+    },
+    accent: {
+      red: '#e81123',
+      redDark: '#a80000',
+      yellow: '#fdb81e',
+      yellowLight: '#fff100',
+    },
   },
 
   size: {
@@ -23,6 +42,7 @@ export default {
     header: 135,
     footer: 35,
     contentHeight: 700,
+    contentWidth: 360,
   },
 
   font: {

@@ -8,16 +8,17 @@ import theme from '../../util/theme';
 const Wrapper = styled.li`
     text-align: ${props => props.isMobile ? 'left' : 'center'};
     flex: 1;
+    list-style-type: none;
 
     &:not(:last-child) {
-      border-bottom: ${props => props.isMobile ? `1px solid ${theme.color.primaryFaded}` : 'none'};
+      border-bottom: ${props => props.isMobile ? `1px solid ${theme.color.theme.tertiary}` : 'none'};
     }
 `;
 
 const StyledIcon = styled(Icon)`
     display: ${props => props.isMobile ? 'inline-block' : 'block'};
     vertical-align: ${props => props.isMobile ? 'middle' : 'baseline'};
-    color: ${theme.color.primaryFaded};
+    color: ${theme.color.theme.tertiary};
     padding-right: ${props => props.isMobile ? '10px' : '0'};
 `;
 
@@ -33,7 +34,7 @@ const StyledLink = styled(Link)`
     &:focus > ${StyledIcon},
     &.active > ${StyledIcon} {
       text-decoration: none;
-      color: ${theme.color.primary};
+      color: ${theme.color.theme.primary};
     }
 `;
 

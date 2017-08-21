@@ -7,11 +7,11 @@ import theme from '../../util/theme';
 
 import Tooltip from '../Tooltip';
 
-const StyledLabel = styled.label`
+const StyledLabel = styled.span`
   ${props => props.required &&
     `&:after {
       content: " *";
-      color: ${theme.color.alert};
+      color: ${theme.color.accent.red};
     }`
   }
 `;
@@ -27,6 +27,7 @@ function Label({
   icon = true,
   required = false,
   disabled = false,
+  ...props,
 }) {
   const labelProps = {
     required: required && !disabled,
@@ -43,7 +44,7 @@ function Label({
   const tooltipLabel = tooltip ? <Tooltip {...toolTipProps}>{styledLabel}</Tooltip> : styledLabel;
 
   return (
-    <ControlLabel htmlFor={name}>
+    <ControlLabel htmlFor={name} {...props}>
       {tooltipLabel}
     </ControlLabel>
   );

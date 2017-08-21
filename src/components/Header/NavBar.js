@@ -10,8 +10,8 @@ import NavMobile from './NavMobile';
 
 const Wrapper = styled.div`
   min-width: 100%;
-  background: ${theme.color.primaryInverse};
-  border-bottom: 5px solid ${theme.color.second};
+  background: ${theme.color.grey.white};
+  border-bottom: 5px solid ${theme.color.accent.yellow};
 `;
 
 const Content = styled.div`

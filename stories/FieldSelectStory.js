@@ -34,7 +34,7 @@ storiesOf('FieldSelect')
               <FieldSelect
                 options={options}
                 name={`basic_${width}`}
-                label={`Select input (xs-${width})`}
+                label={`Select Input (xs-${width})`}
               />
             </Col>
           </Row>
@@ -52,7 +52,7 @@ storiesOf('FieldSelect')
                 icon
                 options={options}
                 name={`tooltip_${width}`}
-                label={`Select Tnput with Tooltip (xs-${width})`}
+                label={`Select Input with Tooltip (xs-${width})`}
                 tooltip={'This is a tooltip.'}
               />
             </Col>
@@ -104,7 +104,7 @@ storiesOf('FieldSelect')
       <FieldSelect
         options={options}
         name={'name4'}
-        label={'Select input onChange'}
+        label={'Select Input onChange'}
         onChange={(event, newValue, previousValue) => {
           console.log(
             'event: ', event,

@@ -6,8 +6,8 @@ const Wrapper = styled.div`
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
   line-height: 1.42857143;
-  color: ${theme.color.bold};
-  background: ${theme.color.primaryInverse};
+  color: ${theme.color.grey.primary};
+  background: ${theme.color.grey.white};
 `;
 
 function GlobalStyle({

@@ -24,5 +24,5 @@ storiesOf('Header')
 
   .add('<NavBar />', () => <NavBar />)
   .add('<NavLinks />', () => <NavLinks />)
-  .add('<NavLink />', () => <NavLink link={{href: '/', text: 'Example NavLink', icon: 'science'}} />)
+  .add('<NavLink />', () => <NavLink link={{ href: '/example', text: 'Example NavLink', icon: 'science' }} />)
   .add('<NavLogo />', () => <NavLogo />);

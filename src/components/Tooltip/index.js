@@ -11,9 +11,9 @@ import Icon from '../Icon';
 const StyledIcon = styled(Icon)`
   margin-left: 5px;
   cursor: pointer;
-  color: ${theme.color.boldFaded};
+  color: ${theme.color.grey.tertiary};
   &:hover {
-    color: ${theme.color.primary};
+    color: ${theme.color.theme.primary};
   }
 `;
 
