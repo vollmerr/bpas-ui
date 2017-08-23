@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Page /> renders correctly 1`] = `
-<div>
+<GlobalStyle>
   <Header
     title="test title"
   />
@@ -9,5 +9,5 @@ exports[`<Page /> renders correctly 1`] = `
     <Child />
   </Styled(Container)>
   <Footer />
-</div>
+</GlobalStyle>
 `;

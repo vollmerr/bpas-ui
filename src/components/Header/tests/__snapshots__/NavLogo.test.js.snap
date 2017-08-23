@@ -6,7 +6,7 @@ exports[`<NavLogo /> renders correctly 1`] = `
 >
   <styled.img
     alt="CA Department of Technology logo"
-    src="_odiLogo.png"
+    src="odiLogo.png"
   />
 </Styled(Link)>
 `;

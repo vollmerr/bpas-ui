@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import logo from './_caGovLogo.svg';
+import logo from './caGovLogo.svg';
 import theme from '../util/theme';
 
 const Image = styled.img`

@@ -6,7 +6,7 @@ exports[`<TitleLogo /> renders correctly 1`] = `
 >
   <styled.img
     alt="CA Gov Logo"
-    src="_caGovLogo.svg"
+    src="caGovLogo.svg"
   />
 </a>
 `;

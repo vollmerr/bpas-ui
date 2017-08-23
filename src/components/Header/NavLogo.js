@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import logo from './_odiLogo.png';
+import logo from './odiLogo.png';
 
 const Wrapper = styled(Link)`
   display: inline-block;
