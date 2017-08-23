@@ -1,75 +1,92 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Field } from 'redux-form';
-import { isEmptyText } from '../util/validate';
+import styled from 'styled-components';
 
-import InputText from './InputText';
+import FormGroup from 'react-bootstrap/lib/FormGroup';
+import ControlLabel from 'react-bootstrap/lib/ControlLabel';
+import FormControl from 'react-bootstrap/lib/FormControl';
+import HelpBlock from 'react-bootstrap/lib/HelpBlock';
+import theme from '../util/theme';
+import { newOnBlur, newOnFocus, newOnChange } from '../util/reduxForm';
 
+import Label from '../Label';
 
-// meta,
-// input,
-// label,
-//   onBlur,
-//   onFocus,
-//   onChange,
-//   tooltip = '',
-//   type = 'text',
-//   required = false,
-//   disabled = false,
-//   placeholder = '',
-//   autoComplete = 'off',
-//   componentClass = 'text',
+// TODO: fix disabled background (still use bootstrap...)
+const Input = styled(FormControl)`
+  text-overflow: ellipsis;
+  border-radius: 0;
+  height: 36px;
+  font-size: ${theme.font.md}px;
+  background: ${props => props.disabled ? theme.color.darkGrey : 'inherit'};
+`;
 
-
-function FieldInput({
-  name,
-  required,
-  disabled,
-  validate,
-  ...props,
+/** Generic text input */
+function FieldText({
+  meta,
+  input,
+  label,
+  onBlur,
+  onFocus,
+  onChange,
+  icon = true,
+  tooltip = '',
+  type = 'text',
+  required = false,
+  disabled = false,
+  placeholder = '',
+  autoComplete = 'off',
+  componentClass = 'input',
 }) {
-  let isRequired = false;
-  let toValidate = undefined;
+  const { name } = input;
+  const { touched, error } = meta;
 
-  if (!disabled) {
-    isRequired = required;
+  const invalidState = touched && error ? 'error' : null;
+  const newPlaceholder = disabled ? '' : placeholder || `Enter ${label}`;
 
-    if (validate && isRequired) {
-      toValidate = [isEmptyText, ...validate];
-    } else if (validate) {
-      toValidate = [...validate];
-    } else if (isRequired) {
-      toValidate = isEmptyText;
-    }
-  }
+  const labelProps = {
+    name,
+    icon,
+    label,
+    tooltip,
+    required,
+    disabled,
+  };
+
+  const inputProps = {
+    ...input,
+    type,
+    onBlur: newOnBlur(onBlur, input),
+    onFocus: newOnFocus(onFocus, input),
+    onChange: newOnChange(onChange, input),
+    disabled,
+    autoComplete,
+    componentClass,
+    placeholder: newPlaceholder,
+  };
 
   return (
-    <Field
-      name={name}
-      disabled={disabled}
-      required={isRequired}
-      validate={toValidate}
-      component={InputText}
-      {...props}
-    />
+    <FormGroup controlId={name} validationState={invalidState}>
+      <Label {...labelProps} />
+      <Input {...inputProps} />
+      {invalidState && <HelpBlock>{error}</HelpBlock>}
+    </FormGroup>
   );
-};
-
-FieldInput.propTypes = {
-  // name: PropTypes.string.isRequired,
-  // required: PropTypes.bool.isRequired,
-  // validate: PropTypes.array.isRequired,
-  // allDisabled: PropTypes.bool.isRequired,
-  // fieldsDisabled: PropTypes.object.isRequired,
-  // hideTooltip: PropTypes.bool.isRequired,
-};
-
-FieldInput.defaultProps = {
-  // required: false,
-  // validate: [],
-  // allDisabled: false,
-  // fieldsDisabled: {},
-  // hideTooltip: false,
 }
 
-export default FieldInput;
+FieldText.propTypes = {
+  input: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    onChange: PropTypes.func,
+    onFocus: PropTypes.func,
+    onBlur: PropTypes.func,
+    value: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]),
+    disabled: PropTypes.bool,
+    placeholder: PropTypes.string,
+    validation: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
+};
+
+export default FieldText;

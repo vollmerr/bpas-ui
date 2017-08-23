@@ -15,12 +15,12 @@ import NavLogo from 'bpas-ui/Header/NavLogo';
 
 storiesOf('Header')
   .addDecorator(StoryRouter())
-  .add('<Header />', () => <Header title="Test Header Title" />)
+  .add('<Header />', () => <Header title="Test Header" />)
 
-  .add('<TitleBar />', () => <TitleBar title="Test TitleBar Title" />)
+  .add('<TitleBar />', () => <TitleBar title="Test TitleBar" />)
   .add('<TitleLinks />', () => <TitleLinks />)
   .add('<TitleLogo />', () => <TitleLogo />)
-  .add('<TitleText />', () => <TitleText title="Test TitleText Title" />)
+  .add('<TitleText />', () => <TitleText title="Test TitleText" />)
 
   .add('<NavBar />', () => <NavBar />)
   .add('<NavLinks />', () => <NavLinks />)

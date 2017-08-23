@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { FieldText } from 'bpas-ui';
+import { FieldText, Field } from 'bpas-ui';
 import Provider from './utils/Provider';
 import ReduxForm from './utils/ReduxForm';
 import Col from 'react-bootstrap/lib/Col';
@@ -14,6 +14,12 @@ const widths = [
   3
 ];
 
+const exampleValidation = value => (
+  !value || value.length < 3
+  ? 'Enter more than 3 characters!'
+  : undefined
+);
+
 storiesOf('FieldText')
   .addDecorator(story =>
     <Provider story={story} />
@@ -24,9 +30,10 @@ storiesOf('FieldText')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldText
+              <Field
                 name={`basic_${width}`}
                 label={`Text input (xs-${width})`}
+                component={FieldText}
               />
             </Col>
           </Row>
@@ -40,11 +47,12 @@ storiesOf('FieldText')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldText
+              <Field
                 icon
                 name={`tooltip_${width}`}
                 label={`Text Tnput with Tooltip (xs-${width})`}
                 tooltip={'This is a tooltip.'}
+                component={FieldText}
               />
             </Col>
           </Row>
@@ -58,11 +66,12 @@ storiesOf('FieldText')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldText
+              <Field
                 required
-                name={`tooltip_${width}`}
+                name={`required_${width}`}
                 label={`Required Text Input (xs-${width})`}
                 tooltip={'This is a tooltip.'}
+                component={FieldText}
               />
             </Col>
           </Row>
@@ -76,11 +85,12 @@ storiesOf('FieldText')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldText
+              <Field
                 disabled
                 name={`disabled_${width}`}
                 label={`Disabled Text Input (xs-${width})`}
                 tooltip={'This is a tooltip.'}
+                component={FieldText}
               />
             </Col>
           </Row>
@@ -90,8 +100,8 @@ storiesOf('FieldText')
   ))
   .add('Custom onChange', () => (
     <ReduxForm>
-      <FieldText
-        name={'name4'}
+      <Field
+        name={'custom_onchange'}
         label={'Text input onChange'}
         onChange={(event, newValue, previousValue) => {
           console.log(
@@ -101,6 +111,18 @@ storiesOf('FieldText')
           );
         }}
         placeholder={'Look at the console'}
+        component={FieldText}
+      />
+    </ReduxForm>
+  ))
+  .add('Custom validation', () => (
+    <ReduxForm>
+      <Field
+        name={'custom_validation'}
+        label={'Text input validation'}
+        validate={[exampleValidation]}
+        placeholder={'Error if less than 3 characters'}
+        component={FieldText}
       />
     </ReduxForm>
   ));
