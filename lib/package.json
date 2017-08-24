@@ -1,11 +1,12 @@
 {
   "name": "bpas-ui",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "./index.js",
   "dependencies": {
     "bootstrap": "3",
     "pikaday": "^1.6.1",
     "react": "^15.6.1",
+    "react-bootstrap": "^0.31.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
