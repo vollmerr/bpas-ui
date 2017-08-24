@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { FieldRadio } from 'bpas-ui';
-import Provider from './utils/Provider';
-import ReduxForm from './utils/ReduxForm';
+import Provider from './util/Provider';
+import ReduxForm from './util/ReduxForm';
 import Col from 'react-bootstrap/lib/Col';
 import Row from 'react-bootstrap/lib/Row';
 
