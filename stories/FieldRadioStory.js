@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { FieldRadio, Field } from 'bpas-ui';
+import { FieldRadio, Field } from '../src/components';
 import Provider from './util/Provider';
-import ReduxForm from './util/ReduxForm';
+import ReduxForm, { storyOnChange } from './util/ReduxForm';
 import Col from 'react-bootstrap/lib/Col';
 import Row from 'react-bootstrap/lib/Row';
 
@@ -13,7 +13,7 @@ const options = [
   { label: 'Option 4 Label', value: 'Option 4 Value' },
 ];
 
-storiesOf('FieldRadio')
+storiesOf('FieldRadio', module)
   .addDecorator(story =>
     <Provider story={story} />
   )
@@ -89,13 +89,7 @@ storiesOf('FieldRadio')
         name={'onChange'}
         label={'Radio input onChange'}
         options={options}
-        onChange={(event, newValue, previousValue) => {
-          console.log(
-            '\nevent: ', event,
-            '\nnewValue: ', newValue,
-            '\npreviousValue: ', previousValue
-          );
-        }}
+        onChange={storyOnChange}
         component={FieldRadio}
       />
     </ReduxForm>

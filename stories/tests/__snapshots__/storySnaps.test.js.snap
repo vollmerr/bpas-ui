@@ -1,0 +1,5449 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots FieldDate Basic 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_date_12"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Date Input (xs-12)
+          </span>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="basic_date_12"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Date Input (xs-12)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="basic_date_12"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-9"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_date_9"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Date Input (xs-9)
+          </span>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="basic_date_9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Date Input (xs-9)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="basic_date_9"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_date_6"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Date Input (xs-6)
+          </span>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="basic_date_6"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Date Input (xs-6)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="basic_date_6"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-4"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_date_4"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Date Input (xs-4)
+          </span>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="basic_date_4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Date Input (xs-4)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="basic_date_4"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-3"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_date_3"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Date Input (xs-3)
+          </span>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="basic_date_3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Date Input (xs-3)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="basic_date_3"
+        />
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldDate Custom onChange 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="has-feedback form-group"
+  >
+    <label
+      className="control-label"
+      htmlFor="onchange_date"
+    >
+      <span
+        className="sc-jKJlTe kxCGof"
+        disabled={false}
+        required={false}
+      >
+        Date Input onChange
+      </span>
+    </label>
+    <input
+      value=""
+    />
+    <input
+      autoComplete="off"
+      className="hidden"
+      disabled={false}
+      name="onchange_date"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      placeholder="Look at the console"
+      type="text"
+      value=""
+    />
+    <input
+      className="hidden"
+      id="onchange_date"
+    />
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldDate Disabled 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_date_12"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Date Input (xs-12)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={true}
+          name="disabled_date_12"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="disabled_date_12"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-9"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_date_9"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Date Input (xs-9)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={true}
+          name="disabled_date_9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="disabled_date_9"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_date_6"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Date Input (xs-6)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={true}
+          name="disabled_date_6"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="disabled_date_6"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-4"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_date_4"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Date Input (xs-4)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={true}
+          name="disabled_date_4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="disabled_date_4"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-3"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_date_3"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Date Input (xs-3)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={true}
+          name="disabled_date_3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="disabled_date_3"
+        />
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldDate Required 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_date_12"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Date Input (xs-12)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="required_date_12"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Date Input (xs-12)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="required_date_12"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-9"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_date_9"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Date Input (xs-9)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="required_date_9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Date Input (xs-9)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="required_date_9"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_date_6"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Date Input (xs-6)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="required_date_6"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Date Input (xs-6)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="required_date_6"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-4"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_date_4"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Date Input (xs-4)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="required_date_4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Date Input (xs-4)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="required_date_4"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-3"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_date_3"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Date Input (xs-3)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="required_date_3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Date Input (xs-3)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="required_date_3"
+        />
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldDate Tooltip 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_date_12"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Date Input with Tooltip (xs-12)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="tooltip_date_12"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Date Input with Tooltip (xs-12)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="tooltip_date_12"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-9"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_date_9"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Date Input with Tooltip (xs-9)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="tooltip_date_9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Date Input with Tooltip (xs-9)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="tooltip_date_9"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_date_6"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Date Input with Tooltip (xs-6)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="tooltip_date_6"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Date Input with Tooltip (xs-6)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="tooltip_date_6"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-4"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_date_4"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Date Input with Tooltip (xs-4)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="tooltip_date_4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Date Input with Tooltip (xs-4)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="tooltip_date_4"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-3"
+    >
+      <div
+        className="has-feedback form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_date_3"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Date Input with Tooltip (xs-3)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="hidden"
+          disabled={false}
+          name="tooltip_date_3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Date Input with Tooltip (xs-3)"
+          type="text"
+          value=""
+        />
+        <input
+          className="hidden"
+          id="tooltip_date_3"
+        />
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldRadio Basic 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="control-label"
+      htmlFor="basic"
+    >
+      <span
+        className="sc-jKJlTe kxCGof"
+        disabled={false}
+        required={false}
+      >
+        Radio input
+      </span>
+    </label>
+    <div
+      className="form-group"
+      name="basic"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="Option 1 Value"
+    >
+      <div>
+        <input
+          checked={true}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="basic_Option 1 Value"
+          name="basic"
+          type="radio"
+          value="Option 1 Value"
+        />
+        <label
+          checked={true}
+          className="sc-kkGfuU dXyRWR control-label"
+          htmlFor="basic_Option 1 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 1 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="basic_Option 2 Value"
+          name="basic"
+          type="radio"
+          value="Option 2 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU bSkFXA control-label"
+          htmlFor="basic_Option 2 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 2 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="basic_Option 3 Value"
+          name="basic"
+          type="radio"
+          value="Option 3 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU bSkFXA control-label"
+          htmlFor="basic_Option 3 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 3 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="basic_Option 4 Value"
+          name="basic"
+          type="radio"
+          value="Option 4 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU bSkFXA control-label"
+          htmlFor="basic_Option 4 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 4 Label
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldRadio Custom onChange 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="control-label"
+      htmlFor="onChange"
+    >
+      <span
+        className="sc-jKJlTe kxCGof"
+        disabled={false}
+        required={false}
+      >
+        Radio input onChange
+      </span>
+    </label>
+    <div
+      className="form-group"
+      name="onChange"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="Option 1 Value"
+    >
+      <div>
+        <input
+          checked={true}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="onChange_Option 1 Value"
+          name="onChange"
+          type="radio"
+          value="Option 1 Value"
+        />
+        <label
+          checked={true}
+          className="sc-kkGfuU dXyRWR control-label"
+          htmlFor="onChange_Option 1 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 1 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="onChange_Option 2 Value"
+          name="onChange"
+          type="radio"
+          value="Option 2 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU bSkFXA control-label"
+          htmlFor="onChange_Option 2 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 2 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="onChange_Option 3 Value"
+          name="onChange"
+          type="radio"
+          value="Option 3 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU bSkFXA control-label"
+          htmlFor="onChange_Option 3 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 3 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="onChange_Option 4 Value"
+          name="onChange"
+          type="radio"
+          value="Option 4 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU bSkFXA control-label"
+          htmlFor="onChange_Option 4 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 4 Label
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldRadio Disabled 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="control-label"
+      htmlFor="disabled"
+    >
+      <div>
+        <span
+          className="sc-jKJlTe kxCGof"
+          disabled={true}
+          required={false}
+        >
+          Disabled Radio Input
+        </span>
+        <span
+          className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+          onBlur={[Function]}
+          onClick={null}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          size={14}
+        />
+      </div>
+    </label>
+    <div
+      className="form-group"
+      name="disabled"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="Option 1 Value"
+    >
+      <div>
+        <input
+          checked={true}
+          className="sc-kEYyzF fJjSbU"
+          disabled={true}
+          id="disabled_Option 1 Value"
+          name="disabled"
+          type="radio"
+          value="Option 1 Value"
+        />
+        <label
+          checked={true}
+          className="sc-kkGfuU ezLwkV control-label"
+          htmlFor="disabled_Option 1 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={true}
+            required={false}
+          >
+            Option 1 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={true}
+          id="disabled_Option 2 Value"
+          name="disabled"
+          type="radio"
+          value="Option 2 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU hCrjKW control-label"
+          htmlFor="disabled_Option 2 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={true}
+            required={false}
+          >
+            Option 2 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={true}
+          id="disabled_Option 3 Value"
+          name="disabled"
+          type="radio"
+          value="Option 3 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU hCrjKW control-label"
+          htmlFor="disabled_Option 3 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={true}
+            required={false}
+          >
+            Option 3 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={true}
+          id="disabled_Option 4 Value"
+          name="disabled"
+          type="radio"
+          value="Option 4 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU hCrjKW control-label"
+          htmlFor="disabled_Option 4 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={true}
+            required={false}
+          >
+            Option 4 Label
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldRadio Required 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="control-label"
+      htmlFor="required"
+    >
+      <div>
+        <span
+          className="sc-jKJlTe eNdBsj"
+          disabled={false}
+          required={true}
+        >
+          Required Radio Input
+        </span>
+        <span
+          className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+          onBlur={[Function]}
+          onClick={null}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          size={14}
+        />
+      </div>
+    </label>
+    <div
+      className="form-group"
+      name="required"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="Option 1 Value"
+    >
+      <div>
+        <input
+          checked={true}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="required_Option 1 Value"
+          name="required"
+          type="radio"
+          value="Option 1 Value"
+        />
+        <label
+          checked={true}
+          className="sc-kkGfuU dXyRWR control-label"
+          htmlFor="required_Option 1 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 1 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="required_Option 2 Value"
+          name="required"
+          type="radio"
+          value="Option 2 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU bSkFXA control-label"
+          htmlFor="required_Option 2 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 2 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="required_Option 3 Value"
+          name="required"
+          type="radio"
+          value="Option 3 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU bSkFXA control-label"
+          htmlFor="required_Option 3 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 3 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="required_Option 4 Value"
+          name="required"
+          type="radio"
+          value="Option 4 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU bSkFXA control-label"
+          htmlFor="required_Option 4 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 4 Label
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldRadio Tooltip 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="control-label"
+      htmlFor="tooltip"
+    >
+      <div>
+        <span
+          className="sc-jKJlTe kxCGof"
+          disabled={false}
+          required={false}
+        >
+          Radio Input with Tooltip
+        </span>
+        <span
+          className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+          onBlur={[Function]}
+          onClick={null}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          size={14}
+        />
+      </div>
+    </label>
+    <div
+      className="form-group"
+      name="tooltip"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="Option 1 Value"
+    >
+      <div>
+        <input
+          checked={true}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="tooltip_Option 1 Value"
+          name="tooltip"
+          type="radio"
+          value="Option 1 Value"
+        />
+        <label
+          checked={true}
+          className="sc-kkGfuU dXyRWR control-label"
+          htmlFor="tooltip_Option 1 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 1 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="tooltip_Option 2 Value"
+          name="tooltip"
+          type="radio"
+          value="Option 2 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU bSkFXA control-label"
+          htmlFor="tooltip_Option 2 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 2 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="tooltip_Option 3 Value"
+          name="tooltip"
+          type="radio"
+          value="Option 3 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU bSkFXA control-label"
+          htmlFor="tooltip_Option 3 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 3 Label
+          </span>
+        </label>
+      </div>
+      <div>
+        <input
+          checked={false}
+          className="sc-kEYyzF fJjSbU"
+          disabled={undefined}
+          id="tooltip_Option 4 Value"
+          name="tooltip"
+          type="radio"
+          value="Option 4 Value"
+        />
+        <label
+          checked={false}
+          className="sc-kkGfuU bSkFXA control-label"
+          htmlFor="tooltip_Option 4 Value"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Option 4 Label
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldSelect Basic 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_select_12"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Select Input (xs-12)
+          </span>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="basic_select_12"
+          name="basic_select_12"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Select Input (xs-12)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-9"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_select_9"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Select Input (xs-9)
+          </span>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="basic_select_9"
+          name="basic_select_9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Select Input (xs-9)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_select_6"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Select Input (xs-6)
+          </span>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="basic_select_6"
+          name="basic_select_6"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Select Input (xs-6)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-4"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_select_4"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Select Input (xs-4)
+          </span>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="basic_select_4"
+          name="basic_select_4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Select Input (xs-4)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-3"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_select_3"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Select Input (xs-3)
+          </span>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="basic_select_3"
+          name="basic_select_3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Select Input (xs-3)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldSelect Custom onChange 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="control-label"
+      htmlFor="onchange_select"
+    >
+      <span
+        className="sc-jKJlTe kxCGof"
+        disabled={false}
+        required={false}
+      >
+        Select Input onChange
+      </span>
+    </label>
+    <select
+      autoComplete="off"
+      className="sc-hMqMXs hUZNxS form-control"
+      disabled={false}
+      id="onchange_select"
+      name="onchange_select"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      placeholder="Look at the console"
+      type="text"
+      value=""
+    >
+      <option />
+      <option
+        value="Option 1 Value"
+      >
+        Option 1 Label
+      </option>
+      <option
+        value="Option 2 Value"
+      >
+        Option 2 Label
+      </option>
+      <option
+        value="Option 3 Value"
+      >
+        Option 3 Label
+      </option>
+      <option
+        value="Option 4 Value"
+      >
+        Option 4 Label
+      </option>
+    </select>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldSelect Disabled 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_select_12"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Select Input (xs-12)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hJaJto form-control"
+          disabled={true}
+          id="disabled_select_12"
+          name="disabled_select_12"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-9"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_select_9"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Select Input (xs-9)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hJaJto form-control"
+          disabled={true}
+          id="disabled_select_9"
+          name="disabled_select_9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_select_6"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Select Input (xs-6)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hJaJto form-control"
+          disabled={true}
+          id="disabled_select_6"
+          name="disabled_select_6"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-4"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_select_4"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Select Input (xs-4)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hJaJto form-control"
+          disabled={true}
+          id="disabled_select_4"
+          name="disabled_select_4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-3"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_select_3"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Select Input (xs-3)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hJaJto form-control"
+          disabled={true}
+          id="disabled_select_3"
+          name="disabled_select_3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldSelect Required 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_select_12"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Select Input (xs-12)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="required_select_12"
+          name="required_select_12"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Select Input (xs-12)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-9"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_select_9"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Select Input (xs-9)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="required_select_9"
+          name="required_select_9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Select Input (xs-9)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_select_6"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Select Input (xs-6)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="required_select_6"
+          name="required_select_6"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Select Input (xs-6)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-4"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_select_4"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Select Input (xs-4)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="required_select_4"
+          name="required_select_4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Select Input (xs-4)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-3"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_select_3"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Select Input (xs-3)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="required_select_3"
+          name="required_select_3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Select Input (xs-3)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldSelect Tooltip 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_select_12"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Select Input with Tooltip (xs-12)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="tooltip_select_12"
+          name="tooltip_select_12"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Select Input with Tooltip (xs-12)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-9"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_select_9"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Select Input with Tooltip (xs-9)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="tooltip_select_9"
+          name="tooltip_select_9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Select Input with Tooltip (xs-9)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_select_6"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Select Input with Tooltip (xs-6)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="tooltip_select_6"
+          name="tooltip_select_6"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Select Input with Tooltip (xs-6)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-4"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_select_4"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Select Input with Tooltip (xs-4)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="tooltip_select_4"
+          name="tooltip_select_4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Select Input with Tooltip (xs-4)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-3"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_select_3"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Select Input with Tooltip (xs-3)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <select
+          autoComplete="off"
+          className="sc-hMqMXs hUZNxS form-control"
+          disabled={false}
+          id="tooltip_select_3"
+          name="tooltip_select_3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Select Input with Tooltip (xs-3)"
+          type="text"
+          value=""
+        >
+          <option />
+          <option
+            value="Option 1 Value"
+          >
+            Option 1 Label
+          </option>
+          <option
+            value="Option 2 Value"
+          >
+            Option 2 Label
+          </option>
+          <option
+            value="Option 3 Value"
+          >
+            Option 3 Label
+          </option>
+          <option
+            value="Option 4 Value"
+          >
+            Option 4 Label
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldText Basic 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_text_12"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Text Input (xs-12)
+          </span>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="basic_text_12"
+          name="basic_text_12"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Text Input (xs-12)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-9"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_text_9"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Text Input (xs-9)
+          </span>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="basic_text_9"
+          name="basic_text_9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Text Input (xs-9)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_text_6"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Text Input (xs-6)
+          </span>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="basic_text_6"
+          name="basic_text_6"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Text Input (xs-6)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-4"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_text_4"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Text Input (xs-4)
+          </span>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="basic_text_4"
+          name="basic_text_4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Text Input (xs-4)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-3"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="basic_text_3"
+        >
+          <span
+            className="sc-jKJlTe kxCGof"
+            disabled={false}
+            required={false}
+          >
+            Text Input (xs-3)
+          </span>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="basic_text_3"
+          name="basic_text_3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Text Input (xs-3)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldText Custom onChange 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="control-label"
+      htmlFor="custom_onchange"
+    >
+      <span
+        className="sc-jKJlTe kxCGof"
+        disabled={false}
+        required={false}
+      >
+        Text Input onChange
+      </span>
+    </label>
+    <input
+      autoComplete="off"
+      className="sc-eNQAEJ lewNFO form-control"
+      disabled={false}
+      id="custom_onchange"
+      name="custom_onchange"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      placeholder="Look at the console"
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldText Custom validation 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="control-label"
+      htmlFor="custom_validation_input"
+    >
+      <span
+        className="sc-jKJlTe kxCGof"
+        disabled={false}
+        required={false}
+      >
+        Text Input with custom validation
+      </span>
+    </label>
+    <input
+      autoComplete="off"
+      className="sc-eNQAEJ lewNFO form-control"
+      disabled={false}
+      id="custom_validation_input"
+      name="custom_validation_input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onDragStart={[Function]}
+      onDrop={[Function]}
+      onFocus={[Function]}
+      placeholder="Error if less than 3 characters"
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldText Disabled 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_text_12"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Text Input (xs-12)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ hVbxgo form-control"
+          disabled={true}
+          id="disabled_text_12"
+          name="disabled_text_12"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-9"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_text_9"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Text Input (xs-9)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ hVbxgo form-control"
+          disabled={true}
+          id="disabled_text_9"
+          name="disabled_text_9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_text_6"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Text Input (xs-6)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ hVbxgo form-control"
+          disabled={true}
+          id="disabled_text_6"
+          name="disabled_text_6"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-4"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_text_4"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Text Input (xs-4)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ hVbxgo form-control"
+          disabled={true}
+          id="disabled_text_4"
+          name="disabled_text_4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-3"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="disabled_text_3"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={true}
+              required={false}
+            >
+              Disabled Text Input (xs-3)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ hVbxgo form-control"
+          disabled={true}
+          id="disabled_text_3"
+          name="disabled_text_3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldText Required 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_text_12"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Text Input (xs-12)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="required_text_12"
+          name="required_text_12"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Text Input (xs-12)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-9"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_text_9"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Text Input (xs-9)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="required_text_9"
+          name="required_text_9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Text Input (xs-9)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_text_6"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Text Input (xs-6)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="required_text_6"
+          name="required_text_6"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Text Input (xs-6)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-4"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_text_4"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Text Input (xs-4)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="required_text_4"
+          name="required_text_4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Text Input (xs-4)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-3"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="required_text_3"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe eNdBsj"
+              disabled={false}
+              required={true}
+            >
+              Required Text Input (xs-3)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="required_text_3"
+          name="required_text_3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Required Text Input (xs-3)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots FieldText Tooltip 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_text_12"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Text Tnput with Tooltip (xs-12)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="tooltip_text_12"
+          name="tooltip_text_12"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Text Tnput with Tooltip (xs-12)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-9"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_text_9"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Text Tnput with Tooltip (xs-9)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="tooltip_text_9"
+          name="tooltip_text_9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Text Tnput with Tooltip (xs-9)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_text_6"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Text Tnput with Tooltip (xs-6)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="tooltip_text_6"
+          name="tooltip_text_6"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Text Tnput with Tooltip (xs-6)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-4"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_text_4"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Text Tnput with Tooltip (xs-4)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="tooltip_text_4"
+          name="tooltip_text_4"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Text Tnput with Tooltip (xs-4)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-3"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="control-label"
+          htmlFor="tooltip_text_3"
+        >
+          <div>
+            <span
+              className="sc-jKJlTe kxCGof"
+              disabled={false}
+              required={false}
+            >
+              Text Tnput with Tooltip (xs-3)
+            </span>
+            <span
+              className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+              onBlur={[Function]}
+              onClick={null}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+              size={14}
+            />
+          </div>
+        </label>
+        <input
+          autoComplete="off"
+          className="sc-eNQAEJ lewNFO form-control"
+          disabled={false}
+          id="tooltip_text_3"
+          name="tooltip_text_3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter Text Tnput with Tooltip (xs-3)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Values
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Footer <Footer /> 1`] = `
+<div>
+  <footer
+    className="sc-kpOJdX lhGJyU"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="sc-chPdSV frpnWz"
+      >
+        <a
+          className="sc-kGXeez JzfuH"
+          href="http://www.ca.gov/Use"
+        >
+          Conditions of Use
+        </a>
+        <a
+          className="sc-kGXeez JzfuH"
+          href="http://www.ca.gov/Privacy"
+        >
+          Privacy Policy
+        </a>
+        <a
+          className="sc-kGXeez JzfuH"
+          href="http://www.ca.gov/Accessibility"
+        >
+          Accessibility
+        </a>
+        <a
+          className="sc-kgoBCf kQztqo"
+          href="/help"
+          onClick={[Function]}
+        >
+          Contact Us
+        </a>
+        <div
+          className="sc-kAzzGY kqJGCL"
+        >
+          Version 
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`Storyshots Footer <Links /> 1`] = `
+<div>
+  <div
+    className="sc-chPdSV frpnWz"
+  >
+    <a
+      className="sc-kGXeez JzfuH"
+      href="http://www.ca.gov/Use"
+    >
+      Conditions of Use
+    </a>
+    <a
+      className="sc-kGXeez JzfuH"
+      href="http://www.ca.gov/Privacy"
+    >
+      Privacy Policy
+    </a>
+    <a
+      className="sc-kGXeez JzfuH"
+      href="http://www.ca.gov/Accessibility"
+    >
+      Accessibility
+    </a>
+    <a
+      className="sc-kgoBCf kQztqo"
+      href="/help"
+      onClick={[Function]}
+    >
+      Contact Us
+    </a>
+    <div
+      className="sc-kAzzGY kqJGCL"
+    >
+      Version 
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Header <Header /> 1`] = `
+<div>
+  <header
+    className="sc-cSHVUG cagjaX"
+  >
+    <div
+      className="sc-ifAKCX hNSfsz"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="sc-EHOje hcWBkz"
+        >
+          <div
+            className="sc-bZQynM kzlsZH"
+          >
+            <a
+              href="http://www.ca.gov"
+              onClick={[Function]}
+            >
+              <img
+                alt="CA Gov Logo"
+                className="sc-bwzfXH kToKGV"
+                src="caGovLogo.svg"
+              />
+            </a>
+            <h1
+              className="sc-htpNat hGnVmR"
+            >
+              Test Header
+            </h1>
+          </div>
+          <a
+            className="sc-bxivhb drlKMz"
+            href="/help"
+            onClick={[Function]}
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-fjdhpX bEPpVd"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="sc-jzJRlG erBDSg"
+        >
+          <a
+            className="sc-gzVnrw fXIzxI"
+            href="/"
+            onClick={[Function]}
+          >
+            <img
+              alt="CA Department of Technology logo"
+              className="sc-htoDjs ldEVX"
+              src="odiLogo.png"
+            />
+          </a>
+          <ul
+            className="sc-VigVT irVmxZ"
+          >
+            <li
+              className="sc-iwsKbI bIrCBw"
+            >
+              <a
+                aria-current="true"
+                className="sc-gqjmRU kQUvaQ active"
+                href="/"
+                onClick={[Function]}
+                style={Object {}}
+              >
+                <span
+                  className="ca-gov-icon-home sc-gZMcBi kTnVNA sc-dnqmqq gyoPaz"
+                  size={32}
+                />
+                Home
+              </a>
+            </li>
+            <li
+              className="sc-iwsKbI bIrCBw"
+            >
+              <a
+                aria-current={false}
+                className="sc-gqjmRU kQUvaQ"
+                href="/help"
+                onClick={[Function]}
+                style={undefined}
+              >
+                <span
+                  className="ca-gov-icon-question-line sc-gZMcBi kTnVNA sc-dnqmqq gyoPaz"
+                  size={32}
+                />
+                Help
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Storyshots Header <NavBar /> 1`] = `
+<div>
+  <div
+    className="sc-fjdhpX bEPpVd"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="sc-jzJRlG erBDSg"
+      >
+        <a
+          className="sc-gzVnrw fXIzxI"
+          href="/"
+          onClick={[Function]}
+        >
+          <img
+            alt="CA Department of Technology logo"
+            className="sc-htoDjs ldEVX"
+            src="odiLogo.png"
+          />
+        </a>
+        <ul
+          className="sc-VigVT irVmxZ"
+        >
+          <li
+            className="sc-iwsKbI bIrCBw"
+          >
+            <a
+              aria-current="true"
+              className="sc-gqjmRU kQUvaQ active"
+              href="/"
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <span
+                className="ca-gov-icon-home sc-gZMcBi kTnVNA sc-dnqmqq gyoPaz"
+                size={32}
+              />
+              Home
+            </a>
+          </li>
+          <li
+            className="sc-iwsKbI bIrCBw"
+          >
+            <a
+              aria-current={false}
+              className="sc-gqjmRU kQUvaQ"
+              href="/help"
+              onClick={[Function]}
+              style={undefined}
+            >
+              <span
+                className="ca-gov-icon-question-line sc-gZMcBi kTnVNA sc-dnqmqq gyoPaz"
+                size={32}
+              />
+              Help
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Header <NavLink /> 1`] = `
+<div>
+  <li
+    className="sc-iwsKbI bIrCBw"
+  >
+    <a
+      aria-current={false}
+      className="sc-gqjmRU kQUvaQ"
+      href="/example"
+      onClick={[Function]}
+      style={undefined}
+    >
+      <span
+        className="ca-gov-icon-science sc-gZMcBi kTnVNA sc-dnqmqq gyoPaz"
+        size={32}
+      />
+      Example NavLink
+    </a>
+  </li>
+</div>
+`;
+
+exports[`Storyshots Header <NavLinks /> 1`] = `
+<div>
+  <ul
+    className="sc-VigVT irVmxZ"
+  >
+    <li
+      className="sc-iwsKbI bIrCBw"
+    >
+      <a
+        aria-current="true"
+        className="sc-gqjmRU kQUvaQ active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          className="ca-gov-icon-home sc-gZMcBi kTnVNA sc-dnqmqq gyoPaz"
+          size={32}
+        />
+        Home
+      </a>
+    </li>
+    <li
+      className="sc-iwsKbI bIrCBw"
+    >
+      <a
+        aria-current={false}
+        className="sc-gqjmRU kQUvaQ"
+        href="/help"
+        onClick={[Function]}
+        style={undefined}
+      >
+        <span
+          className="ca-gov-icon-question-line sc-gZMcBi kTnVNA sc-dnqmqq gyoPaz"
+          size={32}
+        />
+        Help
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Header <NavLogo /> 1`] = `
+<div>
+  <a
+    className="sc-gzVnrw fXIzxI"
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="CA Department of Technology logo"
+      className="sc-htoDjs ldEVX"
+      src="odiLogo.png"
+    />
+  </a>
+</div>
+`;
+
+exports[`Storyshots Header <TitleBar /> 1`] = `
+<div>
+  <div
+    className="sc-ifAKCX hNSfsz"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="sc-EHOje hcWBkz"
+      >
+        <div
+          className="sc-bZQynM kzlsZH"
+        >
+          <a
+            href="http://www.ca.gov"
+            onClick={undefined}
+          >
+            <img
+              alt="CA Gov Logo"
+              className="sc-bwzfXH kToKGV"
+              src="caGovLogo.svg"
+            />
+          </a>
+          <h1
+            className="sc-htpNat hGnVmR"
+          >
+            Test TitleBar
+          </h1>
+        </div>
+        <a
+          className="sc-bxivhb drlKMz"
+          href="/help"
+          onClick={[Function]}
+        >
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Header <TitleLinks /> 1`] = `
+<div>
+  <a
+    className="sc-bxivhb drlKMz"
+    href="/help"
+    onClick={[Function]}
+  >
+    Contact Us
+  </a>
+</div>
+`;
+
+exports[`Storyshots Header <TitleLogo /> 1`] = `
+<div>
+  <a
+    href="http://www.ca.gov"
+    onClick={undefined}
+  >
+    <img
+      alt="CA Gov Logo"
+      className="sc-bwzfXH kToKGV"
+      src="caGovLogo.svg"
+    />
+  </a>
+</div>
+`;
+
+exports[`Storyshots Header <TitleText /> 1`] = `
+<div>
+  <h1
+    className="sc-htpNat hGnVmR"
+  >
+    Test TitleText
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Icon home 1`] = `
+<span
+  className="ca-gov-icon-home undefined sc-dnqmqq ktZvEg"
+  size={20}
+/>
+`;
+
+exports[`Storyshots Page custom links 1`] = `
+<div>
+  <div
+    className="sc-bdVaJa cRWZyM"
+  >
+    <header
+      className="sc-cSHVUG cagjaX"
+    >
+      <div
+        className="sc-ifAKCX hNSfsz"
+      >
+        <div
+          className="container"
+        >
+          <div
+            className="sc-EHOje hcWBkz"
+          >
+            <div
+              className="sc-bZQynM kzlsZH"
+            >
+              <a
+                href="http://www.ca.gov"
+                onClick={[Function]}
+              >
+                <img
+                  alt="CA Gov Logo"
+                  className="sc-bwzfXH kToKGV"
+                  src="caGovLogo.svg"
+                />
+              </a>
+              <h1
+                className="sc-htpNat hGnVmR"
+              >
+                Test Custom Links Page
+              </h1>
+            </div>
+            <a
+              className="sc-bxivhb drlKMz"
+              href="/help"
+              onClick={[Function]}
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-fjdhpX bEPpVd"
+      >
+        <div
+          className="container"
+        >
+          <div
+            className="sc-jzJRlG erBDSg"
+          >
+            <a
+              className="sc-gzVnrw fXIzxI"
+              href="/"
+              onClick={[Function]}
+            >
+              <img
+                alt="CA Department of Technology logo"
+                className="sc-htoDjs ldEVX"
+                src="odiLogo.png"
+              />
+            </a>
+            <ul
+              className="sc-VigVT irVmxZ"
+            >
+              <li
+                className="sc-iwsKbI bIrCBw"
+              >
+                <a
+                  aria-current={false}
+                  className="sc-gqjmRU kQUvaQ"
+                  href="/Page1"
+                  onClick={[Function]}
+                  style={undefined}
+                >
+                  <span
+                    className="ca-gov-icon-home sc-gZMcBi kTnVNA sc-dnqmqq gyoPaz"
+                    size={32}
+                  />
+                  Test Home
+                </a>
+              </li>
+              <li
+                className="sc-iwsKbI bIrCBw"
+              >
+                <a
+                  aria-current={false}
+                  className="sc-gqjmRU kQUvaQ"
+                  href="/Page2"
+                  onClick={[Function]}
+                  style={undefined}
+                >
+                  <span
+                    className="ca-gov-icon-favorite sc-gZMcBi kTnVNA sc-dnqmqq gyoPaz"
+                    size={32}
+                  />
+                  Test page 2
+                </a>
+              </li>
+              <li
+                className="sc-iwsKbI bIrCBw"
+              >
+                <a
+                  aria-current={false}
+                  className="sc-gqjmRU kQUvaQ"
+                  href="/Page3"
+                  onClick={[Function]}
+                  style={undefined}
+                >
+                  <span
+                    className="ca-gov-icon-gear sc-gZMcBi kTnVNA sc-dnqmqq gyoPaz"
+                    size={32}
+                  />
+                  Test 3
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      className="sc-dxgOiQ sScPc container"
+    >
+      content goes here
+    </div>
+    <footer
+      className="sc-kpOJdX lhGJyU"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="sc-chPdSV frpnWz"
+        >
+          <a
+            className="sc-kGXeez JzfuH"
+            href="http://www.ca.gov/Use"
+          >
+            Conditions of Use
+          </a>
+          <a
+            className="sc-kGXeez JzfuH"
+            href="http://www.ca.gov/Privacy"
+          >
+            Privacy Policy
+          </a>
+          <a
+            className="sc-kGXeez JzfuH"
+            href="http://www.ca.gov/Accessibility"
+          >
+            Accessibility
+          </a>
+          <a
+            className="sc-kgoBCf kQztqo"
+            href="/help"
+            onClick={[Function]}
+          >
+            Contact Us
+          </a>
+          <div
+            className="sc-kAzzGY kqJGCL"
+          >
+            Version 
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Page default links 1`] = `
+<div>
+  <div
+    className="sc-bdVaJa cRWZyM"
+  >
+    <header
+      className="sc-cSHVUG cagjaX"
+    >
+      <div
+        className="sc-ifAKCX hNSfsz"
+      >
+        <div
+          className="container"
+        >
+          <div
+            className="sc-EHOje hcWBkz"
+          >
+            <div
+              className="sc-bZQynM kzlsZH"
+            >
+              <a
+                href="http://www.ca.gov"
+                onClick={[Function]}
+              >
+                <img
+                  alt="CA Gov Logo"
+                  className="sc-bwzfXH kToKGV"
+                  src="caGovLogo.svg"
+                />
+              </a>
+              <h1
+                className="sc-htpNat hGnVmR"
+              >
+                Test Default Page
+              </h1>
+            </div>
+            <a
+              className="sc-bxivhb drlKMz"
+              href="/help"
+              onClick={[Function]}
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-fjdhpX bEPpVd"
+      >
+        <div
+          className="container"
+        >
+          <div
+            className="sc-jzJRlG erBDSg"
+          >
+            <a
+              className="sc-gzVnrw fXIzxI"
+              href="/"
+              onClick={[Function]}
+            >
+              <img
+                alt="CA Department of Technology logo"
+                className="sc-htoDjs ldEVX"
+                src="odiLogo.png"
+              />
+            </a>
+            <ul
+              className="sc-VigVT irVmxZ"
+            >
+              <li
+                className="sc-iwsKbI bIrCBw"
+              >
+                <a
+                  aria-current="true"
+                  className="sc-gqjmRU kQUvaQ active"
+                  href="/"
+                  onClick={[Function]}
+                  style={Object {}}
+                >
+                  <span
+                    className="ca-gov-icon-home sc-gZMcBi kTnVNA sc-dnqmqq gyoPaz"
+                    size={32}
+                  />
+                  Home
+                </a>
+              </li>
+              <li
+                className="sc-iwsKbI bIrCBw"
+              >
+                <a
+                  aria-current={false}
+                  className="sc-gqjmRU kQUvaQ"
+                  href="/help"
+                  onClick={[Function]}
+                  style={undefined}
+                >
+                  <span
+                    className="ca-gov-icon-question-line sc-gZMcBi kTnVNA sc-dnqmqq gyoPaz"
+                    size={32}
+                  />
+                  Help
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      className="sc-dxgOiQ sScPc container"
+    >
+      content goes here
+    </div>
+    <footer
+      className="sc-kpOJdX lhGJyU"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="sc-chPdSV frpnWz"
+        >
+          <a
+            className="sc-kGXeez JzfuH"
+            href="http://www.ca.gov/Use"
+          >
+            Conditions of Use
+          </a>
+          <a
+            className="sc-kGXeez JzfuH"
+            href="http://www.ca.gov/Privacy"
+          >
+            Privacy Policy
+          </a>
+          <a
+            className="sc-kGXeez JzfuH"
+            href="http://www.ca.gov/Accessibility"
+          >
+            Accessibility
+          </a>
+          <a
+            className="sc-kgoBCf kQztqo"
+            href="/help"
+            onClick={[Function]}
+          >
+            Contact Us
+          </a>
+          <div
+            className="sc-kAzzGY kqJGCL"
+          >
+            Version 
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tooltip Basic 1`] = `
+<div>
+  Tooltip on a string
+  <span
+    className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+    onBlur={[Function]}
+    onClick={null}
+    onFocus={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    size={14}
+  />
+</div>
+`;
+
+exports[`Storyshots Tooltip With Long Text 1`] = `
+<div>
+  Really long text...
+  <span
+    className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+    onBlur={[Function]}
+    onClick={null}
+    onFocus={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    size={14}
+  />
+</div>
+`;
+
+exports[`Storyshots Tooltip With Node child 1`] = `
+<div>
+  <span
+    style={
+      Object {
+        "color": "red",
+      }
+    }
+  >
+    Tooltip for red text
+  </span>
+  <span
+    className="ca-gov-icon-question-fill sc-ckVGcZ cFVWMy sc-dnqmqq dMbwbF"
+    onBlur={[Function]}
+    onClick={null}
+    onFocus={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    size={14}
+  />
+</div>
+`;
+
+exports[`Storyshots Tooltip Without Icon 1`] = `
+<span
+  onBlur={[Function]}
+  onClick={null}
+  onFocus={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  Tooltip without an icon
+</span>
+`;

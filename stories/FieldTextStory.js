@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { FieldText, Field } from 'bpas-ui';
+import { FieldText, Field } from '../src/components';
 import Provider from './util/Provider';
-import ReduxForm from './util/ReduxForm';
+import ReduxForm, { storyOnChange } from './util/ReduxForm';
 import Col from 'react-bootstrap/lib/Col';
 import Row from 'react-bootstrap/lib/Row';
 
@@ -20,7 +20,7 @@ const exampleValidation = value => (
   : undefined
 );
 
-storiesOf('FieldText')
+storiesOf('FieldText', module)
   .addDecorator(story =>
     <Provider story={story} />
   )
@@ -103,13 +103,7 @@ storiesOf('FieldText')
       <Field
         name={'custom_onchange'}
         label={'Text Input onChange'}
-        onChange={(event, newValue, previousValue) => {
-          console.log(
-            'event: ', event,
-            'newValue: ', newValue,
-            'previousValue: ', previousValue
-          );
-        }}
+        onChange={storyOnChange}
         placeholder={'Look at the console'}
         component={FieldText}
       />

@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { FieldDate, Field } from 'bpas-ui';
+import { FieldDate, Field } from '../src/components';
 import Provider from './util/Provider';
-import ReduxForm from './util/ReduxForm';
+import ReduxForm, { storyOnChange } from './util/ReduxForm';
 import Col from 'react-bootstrap/lib/Col';
 import Row from 'react-bootstrap/lib/Row';
 
@@ -14,7 +14,7 @@ const widths = [
   3
 ];
 
-storiesOf('FieldDate')
+storiesOf('FieldDate', module)
   .addDecorator(story =>
     <Provider story={story} />
   )
@@ -97,13 +97,7 @@ storiesOf('FieldDate')
       <Field
         name={'onchange_date'}
         label={'Date Input onChange'}
-        onChange={(event, newValue, previousValue) => {
-          console.log(
-            'event: ', event,
-            'newValue: ', newValue,
-            'previousValue: ', previousValue
-          );
-        }}
+        onChange={storyOnChange}
         placeholder={'Look at the console'}
         component={FieldDate}
       />

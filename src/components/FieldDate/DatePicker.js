@@ -51,7 +51,7 @@ class DatePicker extends Component {
   render() {
     const { name, minDate, disabled, ...props } = this.props;
     const { displayText } = this.state;
-console.log(this.state);
+// console.log(this.state);
     return (
       <div className={'fieldDate'}>
         {/* field that will be displayed */}

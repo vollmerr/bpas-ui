@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { FieldSelect, Field } from 'bpas-ui';
+import { FieldSelect, Field } from '../src/components';
 import Provider from './util/Provider';
-import ReduxForm from './util/ReduxForm';
+import ReduxForm, { storyOnChange } from './util/ReduxForm';
 import Col from 'react-bootstrap/lib/Col';
 import Row from 'react-bootstrap/lib/Row';
 
@@ -21,7 +21,7 @@ const options = [
   { label: 'Option 4 Label', value: 'Option 4 Value' },
 ]
 
-storiesOf('FieldSelect')
+storiesOf('FieldSelect', module)
   .addDecorator(story =>
     <Provider story={story} />
   )
@@ -109,13 +109,7 @@ storiesOf('FieldSelect')
         options={options}
         name={'onchange_select'}
         label={'Select Input onChange'}
-        onChange={(event, newValue, previousValue) => {
-          console.log(
-            'event: ', event,
-            'newValue: ', newValue,
-            'previousValue: ', previousValue
-          );
-        }}
+        onChange={storyOnChange}
         placeholder={'Look at the console'}
         component={FieldSelect}
       />

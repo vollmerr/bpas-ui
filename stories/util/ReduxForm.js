@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import { reduxForm } from 'redux-form';
 
+export const storyOnChange = (event, newValue, previousValue) => {
+  console.log(
+    'event: ', event,
+    'newValue: ', newValue,
+    'previousValue: ', previousValue
+  );
+}
+
 class ReduxForm extends Component {
   componentDidMount() {
     const { init, change } = this.props;

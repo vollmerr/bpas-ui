@@ -73,7 +73,7 @@ class FieldDate extends Component {
 
     // name, minDate, disabled, ...props } = this.props;
     const { displayText } = this.state;
-    console.log(this.state);
+    // console.log(this.state);
 
     const { name } = input;
     const { touched, error } = meta;

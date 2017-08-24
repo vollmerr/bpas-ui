@@ -56,7 +56,10 @@ Tooltip.propTypes = {
     PropTypes.node,
     PropTypes.string,
   ]).isRequired,
-  tooltip: PropTypes.string,
+  tooltip: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.string,
+  ]).isRequired,
   icon: PropTypes.bool,
 };
 

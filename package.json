@@ -25,6 +25,7 @@
   "devDependencies": {
     "@storybook/addon-info": "^3.1.6",
     "@storybook/addon-options": "^3.1.6",
+    "@storybook/addon-storyshots": "^3.2.8",
     "@storybook/react": "^3.1.8",
     "autoprefixer": "7.1.1",
     "babel-cli": "^6.24.1",
@@ -79,22 +80,23 @@
     "build:assets": "cpx \"./src/components/**/*.{css,eot,svg,ttf,woff,png}\" ./lib",
     "build:copy-files": "node scripts/copyBuildFiles.js",
     "build:components": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore test.js",
+    "predocs": "npm run test:coverage",
     "docs": "build-storybook -c .storybook -o ./docs",
     "test": "node scripts/test.js --env=jsdom",
+    "test:coverage": "npm test -- --coverage",
     "storybook": "start-storybook -p 6006",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && npm run docs",
     "deploy": "cd lib && npm publish && cd ../"
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
+      "(src|stories)/**/*.{js,jsx}"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
     ],
     "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.js?(x)",
-      "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
+      "<rootDir>/(src|stories)/**/?(*.)(spec|test).js?(x)"
     ],
     "testEnvironment": "node",
     "testURL": "http://localhost",

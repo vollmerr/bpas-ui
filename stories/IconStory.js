@@ -1,6 +1,6 @@
 import React from 'react';
-import { Icon } from 'bpas-ui';
+import { Icon } from '../src/components';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('Icon')
+storiesOf('Icon', module)
   .add('home', () => <Icon icon="home" />);
