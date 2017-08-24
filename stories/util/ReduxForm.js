@@ -19,7 +19,7 @@ class ReduxForm extends Component {
 
   render() {
     const { handleSubmit, change, pristine, reset, submitting, children, init } = this.props;
-    const onSubmit = (vals) => console.log('Submitting: ', vals);
+    const onSubmit = (vals) => alert(JSON.stringify(vals, null, 2));
 
     return (
       <form onSubmit={handleSubmit(onSubmit)}>
