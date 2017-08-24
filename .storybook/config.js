@@ -1,10 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
-import React from 'react';
-import { configure, setAddon } from '@storybook/react';
+import * as storybook from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 
 setOptions({
   name: 'BPAS UI',
+  url: 'https://github.com/vollmerr/bpas-ui',
   goFullScreen: false,
   showLeftPanel: true,
   showDownPanel: false,
@@ -13,8 +13,4 @@ setOptions({
   sortStoriesByKind: false,
 });
 
-function loadStories() {
-  require('../stories');
-}
-
-configure(loadStories, module);
+storybook.configure(() => require('../stories'), module);

@@ -24,10 +24,8 @@
   },
   "devDependencies": {
     "@storybook/addon-info": "^3.1.6",
-    "@storybook/addon-knobs": "^3.1.8",
     "@storybook/addon-options": "^3.1.6",
     "@storybook/react": "^3.1.8",
-    "@storybook/storybook-deployer": "^2.0.0",
     "autoprefixer": "7.1.1",
     "babel-cli": "^6.24.1",
     "babel-core": "6.25.0",

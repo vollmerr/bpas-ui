@@ -18,6 +18,7 @@ const Input = styled(FormControl) `
   height: 36px;
   font-size: ${theme.font.md}px;
   background: ${props => props.disabled ? theme.color.darkGrey : 'inherit'};
+  cursor: pointer;
 `;
 
 /** Generic text input */
