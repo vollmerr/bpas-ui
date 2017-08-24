@@ -39,12 +39,6 @@ class IconStory extends React.Component {
 }
 
 storiesOf('Icon', module)
-  .add('basic', () => (
-    <IconStory />
-  ))
-  .add('color', () => (
-    <IconStory iconProps={{ style: { color: 'blue' } }} />
-  ))
-  .add('size', () => (
-    <IconStory iconProps={{ size: 40 }} />
-  ));
+  .add('basic', () => <IconStory />)
+  .add('color', () => <IconStory iconProps={{ style: { color: 'blue' } }} />)
+  .add('size', () => <IconStory iconProps={{ size: 40 }} />);

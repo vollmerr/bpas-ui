@@ -17557,6 +17557,110 @@ exports[`Storyshots Icon size 1`] = `
 </div>
 `;
 
+exports[`Storyshots MessageError all props 1`] = `
+<div
+  className="sc-iAyFgw ingqVW"
+>
+  <h2>
+    Sorry, something went wrong!
+  </h2>
+  <p>
+    This is an error message.
+  </p>
+  <button
+    className="btn btn-default"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Custom Error Message Button
+  </button>
+</div>
+`;
+
+exports[`Storyshots MessageError buttonText 1`] = `
+<div
+  className="sc-iAyFgw ingqVW"
+>
+  <h2>
+    Sorry, something went wrong!
+  </h2>
+  <p>
+    
+  </p>
+  <button
+    className="btn btn-default"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Custom Error Message Button
+  </button>
+</div>
+`;
+
+exports[`Storyshots MessageError default 1`] = `
+<div
+  className="sc-iAyFgw ingqVW"
+>
+  <h2>
+    Sorry, something went wrong!
+  </h2>
+  <p>
+    
+  </p>
+  
+</div>
+`;
+
+exports[`Storyshots MessageError error 1`] = `
+<div
+  className="sc-iAyFgw ingqVW"
+>
+  <h2>
+    Sorry, something went wrong!
+  </h2>
+  <p>
+    This is an error message.
+  </p>
+  
+</div>
+`;
+
+exports[`Storyshots MessageError onClick 1`] = `
+<div
+  className="sc-iAyFgw ingqVW"
+>
+  <h2>
+    Sorry, something went wrong!
+  </h2>
+  <p>
+    
+  </p>
+  <button
+    className="btn btn-default"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Home
+  </button>
+</div>
+`;
+
+exports[`Storyshots MessageLoading default 1`] = `
+<div
+  className="sc-cvbbAY ealmpJ"
+>
+  <div
+    className="sc-hSdWYo jENMhD"
+  />
+  <div
+    className="sc-eHgmQL hZJjbm sc-hSdWYo jENMhD"
+  />
+</div>
+`;
+
 exports[`Storyshots Page custom links 1`] = `
 <div>
   <div
@@ -17889,7 +17993,7 @@ exports[`Storyshots Page default links 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tooltip Basic 1`] = `
+exports[`Storyshots Tooltip default 1`] = `
 <div>
   Tooltip on a string
   <span
@@ -17904,7 +18008,19 @@ exports[`Storyshots Tooltip Basic 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tooltip With Long Text 1`] = `
+exports[`Storyshots Tooltip icon = false 1`] = `
+<span
+  onBlur={[Function]}
+  onClick={null}
+  onFocus={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  Tooltip without an icon
+</span>
+`;
+
+exports[`Storyshots Tooltip long tooltip 1`] = `
 <div>
   Really long text...
   <span
@@ -17919,7 +18035,7 @@ exports[`Storyshots Tooltip With Long Text 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tooltip With Node child 1`] = `
+exports[`Storyshots Tooltip node child 1`] = `
 <div>
   <span
     style={
@@ -17940,16 +18056,4 @@ exports[`Storyshots Tooltip With Node child 1`] = `
     size={14}
   />
 </div>
-`;
-
-exports[`Storyshots Tooltip Without Icon 1`] = `
-<span
-  onBlur={[Function]}
-  onClick={null}
-  onFocus={[Function]}
-  onMouseOut={[Function]}
-  onMouseOver={[Function]}
->
-  Tooltip without an icon
-</span>
 `;
