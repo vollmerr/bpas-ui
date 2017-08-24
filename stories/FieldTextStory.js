@@ -31,8 +31,8 @@ storiesOf('FieldText')
           <Row key={width}>
             <Col xs={width}>
               <Field
-                name={`basic_${width}`}
-                label={`Text input (xs-${width})`}
+                name={`basic_text_${width}`}
+                label={`Text Input (xs-${width})`}
                 component={FieldText}
               />
             </Col>
@@ -49,7 +49,7 @@ storiesOf('FieldText')
             <Col xs={width}>
               <Field
                 icon
-                name={`tooltip_${width}`}
+                name={`tooltip_text_${width}`}
                 label={`Text Tnput with Tooltip (xs-${width})`}
                 tooltip={'This is a tooltip.'}
                 component={FieldText}
@@ -68,7 +68,7 @@ storiesOf('FieldText')
             <Col xs={width}>
               <Field
                 required
-                name={`required_${width}`}
+                name={`required_text_${width}`}
                 label={`Required Text Input (xs-${width})`}
                 tooltip={'This is a tooltip.'}
                 component={FieldText}
@@ -87,7 +87,7 @@ storiesOf('FieldText')
             <Col xs={width}>
               <Field
                 disabled
-                name={`disabled_${width}`}
+                name={`disabled_text_${width}`}
                 label={`Disabled Text Input (xs-${width})`}
                 tooltip={'This is a tooltip.'}
                 component={FieldText}
@@ -102,7 +102,7 @@ storiesOf('FieldText')
     <ReduxForm>
       <Field
         name={'custom_onchange'}
-        label={'Text input onChange'}
+        label={'Text Input onChange'}
         onChange={(event, newValue, previousValue) => {
           console.log(
             'event: ', event,
@@ -118,8 +118,8 @@ storiesOf('FieldText')
   .add('Custom validation', () => (
     <ReduxForm>
       <Field
-        name={'custom_validation'}
-        label={'Text input validation'}
+        name={'custom_validation_input'}
+        label={'Text Input with custom validation'}
         validate={[exampleValidation]}
         placeholder={'Error if less than 3 characters'}
         component={FieldText}

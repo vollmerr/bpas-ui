@@ -1,59 +1,172 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Field } from 'redux-form';
-import { isEmptyText } from '../util/validate';
+import styled from 'styled-components';
 
-import GroupRadio from './GroupRadio';
+import FormGroup from 'react-bootstrap/lib/FormGroup';
+import ControlLabel from 'react-bootstrap/lib/ControlLabel';
+import FormControl from 'react-bootstrap/lib/FormControl';
+import HelpBlock from 'react-bootstrap/lib/HelpBlock';
+import Radio from 'react-bootstrap/lib/Radio';
 
-function FieldRadio({
-  name,
-  required,
-  disabled,
-  validate,
-  ...props,
-}) {
-  let isRequired = false;
-  let toValidate = undefined;
+import theme from '../util/theme';
+import { mapOnBlur, mapOnFocus, mapOnChange } from '../util/reduxForm';
 
-  if (!disabled) {
-    isRequired = required;
+import Label from '../Label';
 
-    if (validate && isRequired) {
-      toValidate = [isEmptyText, ...validate];
-    } else if (validate) {
-      toValidate = [...validate];
-    } else if (isRequired) {
-      toValidate = isEmptyText;
-    }
+
+const HiddenInput = styled.input`
+  position: absolute;
+  opacity: 0;
+`;
+
+const getLabelStatus = ({ disabled = false, checked = false }) => {
+  if (checked) {
+    return `
+      background: ${disabled ? theme.color.grey.tertiary : theme.color.theme.primary};
+      border-color: ${disabled ? theme.color.grey.primary : theme.color.theme.secondary};
+      content: 'N';
+    `;
   }
 
+  if (disabled) {
+    return `
+      background: ${theme.color.grey.light};
+      border-color: ${theme.color.grey.tertiary};
+    `;
+  }
+
+  return `
+    background: ${theme.color.grey.lighter};
+    border-color: ${theme.color.grey.tertiary};
+  `;
+};
+
+const StyledLabel = styled(Label) `
+  &:before {
+    border-radius: 100%;
+    border: 1px solid;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    margin-right: 1em;
+    vertical-align: top;
+    cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
+    text-align: center;
+    transition: all 250ms ease;
+    color: ${theme.color.grey.white};
+    font-family: 'CaGov';
+    content: '';
+    ${props => getLabelStatus(props)}
+  }
+
+  font-weight: 400;
+  padding-left: 0;
+  cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
+`;
+
+const InputRadio = ({ name, value, option, disabled }) => {
+  const checked = value === option.value;
+  const isDisabled = disabled || option.disabled;
+  const id = `${name}_${option.value}`;
+
+  const inputProps = {
+    id,
+    name,
+    checked,
+    type: 'radio',
+    value: option.value,
+    disabled: isDisabled,
+  };
+
+  const labelProps = {
+    label: option.label,
+    name: id,
+    checked,
+    disabled: isDisabled,
+  };
+
   return (
-    <Field
-      name={name}
-      disabled={disabled}
-      required={isRequired}
-      validate={toValidate}
-      component={GroupRadio}
-      {...props}
-    />
+    <div>
+      <HiddenInput {...inputProps} />
+      <StyledLabel {...labelProps} />
+    </div>
   );
-};
-
-FieldRadio.propTypes = {
-  // name: PropTypes.string.isRequired,
-  // required: PropTypes.bool.isRequired,
-  // validate: PropTypes.array.isRequired,
-  // allDisabled: PropTypes.bool.isRequired,
-  // fieldsDisabled: PropTypes.object.isRequired,
-  // hideTooltip: PropTypes.bool.isRequired,
-};
-
-FieldRadio.defaultProps = {
-  // required: false,
-  // validate: [],
-  // allDisabled: false,
-  // fieldsDisabled: {},
-  // hideTooltip: false,
 }
+
+
+/** Generic text input */
+function FieldRadio({
+  meta,
+  input,
+  label,
+  options,
+  onBlur,
+  onFocus,
+  onChange,
+  icon = true,
+  tooltip = '',
+  type = 'radio',
+  required = false,
+  disabled = false,
+}) {
+  const { name, value } = input;
+  const { touched, error } = meta;
+
+  const invalidState = touched && error ? 'error' : null;
+
+  const labelProps = {
+    name,
+    icon,
+    label,
+    tooltip,
+    required,
+    disabled,
+  };
+
+  const groupProps = {
+    ...input,
+    type,
+    onBlur: mapOnBlur(onBlur, input),
+    onFocus: mapOnFocus(onFocus, input),
+    onChange: mapOnChange(onChange, input),
+  };
+
+  return (
+    <FormGroup controlId={name} validationState={invalidState}>
+      <Label {...labelProps} />
+
+      <FormGroup {...groupProps}>
+        {options.map(option => (
+          <InputRadio
+            key={option.value}
+            name={name}
+            value={value}
+            option={option}
+            disabled={disabled}
+          />
+        ))}
+      </FormGroup>
+
+      {invalidState && <HelpBlock>{error}</HelpBlock>}
+    </FormGroup>
+  );
+}
+
+// TODO: add proptypes
+FieldRadio.propTypes = {
+  input: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    onChange: PropTypes.func,
+    onBlur: PropTypes.func,
+    value: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]),
+    disabled: PropTypes.bool,
+    placeholder: PropTypes.string,
+    validation: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
+};
 
 export default FieldRadio;

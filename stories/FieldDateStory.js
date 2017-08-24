@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { FieldDate } from 'bpas-ui';
+import { FieldDate, Field } from 'bpas-ui';
 import Provider from './util/Provider';
 import ReduxForm from './util/ReduxForm';
 import Col from 'react-bootstrap/lib/Col';
@@ -24,9 +24,10 @@ storiesOf('FieldDate')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldDate
-                name={`basic_${width}`}
-                label={`Text input (xs-${width})`}
+              <Field
+                name={`basic_date_${width}`}
+                label={`Date Input (xs-${width})`}
+                component={FieldDate}
               />
             </Col>
           </Row>
@@ -40,11 +41,12 @@ storiesOf('FieldDate')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldDate
+              <Field
                 icon
-                name={`tooltip_${width}`}
-                label={`Text Tnput with Tooltip (xs-${width})`}
+                name={`tooltip_date_${width}`}
+                label={`Date Input with Tooltip (xs-${width})`}
                 tooltip={'This is a tooltip.'}
+                component={FieldDate}
               />
             </Col>
           </Row>
@@ -58,11 +60,12 @@ storiesOf('FieldDate')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldDate
+              <Field
                 required
-                name={`tooltip_${width}`}
-                label={`Required Text Input (xs-${width})`}
+                name={`required_date_${width}`}
+                label={`Required Date Input (xs-${width})`}
                 tooltip={'This is a tooltip.'}
+                component={FieldDate}
               />
             </Col>
           </Row>
@@ -76,11 +79,12 @@ storiesOf('FieldDate')
         widths.map((width) => (
           <Row key={width}>
             <Col xs={width}>
-              <FieldDate
+              <Field
                 disabled
-                name={`disabled_${width}`}
-                label={`Disabled Text Input (xs-${width})`}
+                name={`disabled_date_${width}`}
+                label={`Disabled Date Input (xs-${width})`}
                 tooltip={'This is a tooltip.'}
+                component={FieldDate}
               />
             </Col>
           </Row>
@@ -90,9 +94,9 @@ storiesOf('FieldDate')
   ))
   .add('Custom onChange', () => (
     <ReduxForm>
-      <FieldDate
-        name={'name4'}
-        label={'Text input onChange'}
+      <Field
+        name={'onchange_date'}
+        label={'Date Input onChange'}
         onChange={(event, newValue, previousValue) => {
           console.log(
             'event: ', event,
@@ -101,6 +105,7 @@ storiesOf('FieldDate')
           );
         }}
         placeholder={'Look at the console'}
+        component={FieldDate}
       />
     </ReduxForm>
   ));

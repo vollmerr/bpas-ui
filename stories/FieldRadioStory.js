@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { FieldRadio } from 'bpas-ui';
+import { FieldRadio, Field } from 'bpas-ui';
 import Provider from './util/Provider';
 import ReduxForm from './util/ReduxForm';
 import Col from 'react-bootstrap/lib/Col';
@@ -23,10 +23,11 @@ storiesOf('FieldRadio')
         { basic: options[0].value }
       }
     >
-      <FieldRadio
+      <Field
         options={options}
         name={`basic`}
         label={`Radio input`}
+        component={FieldRadio}
       />
     </ReduxForm>
   ))
@@ -36,12 +37,13 @@ storiesOf('FieldRadio')
         { tooltip: options[0].value }
       }
     >
-      <FieldRadio
+      <Field
         icon
         options={options}
         name={`tooltip`}
         label={`Radio Input with Tooltip`}
         tooltip={'This is a tooltip.'}
+        component={FieldRadio}
       />
     </ReduxForm>
   ))
@@ -51,12 +53,13 @@ storiesOf('FieldRadio')
         { required: options[0].value }
       }
     >
-      <FieldRadio
+      <Field
         required
         options={options}
         name={`required`}
         label={`Required Radio Input`}
         tooltip={'This is a tooltip.'}
+        component={FieldRadio}
       />
     </ReduxForm>
   ))
@@ -66,12 +69,13 @@ storiesOf('FieldRadio')
         { disabled: options[0].value }
       }
     >
-      <FieldRadio
+      <Field
         disabled
         options={options}
         name={`disabled`}
         label={`Disabled Radio Input`}
         tooltip={'This is a tooltip.'}
+        component={FieldRadio}
       />
     </ReduxForm>
   ))
@@ -81,7 +85,7 @@ storiesOf('FieldRadio')
         { onChange: options[0].value }
       }
     >
-      <FieldRadio
+      <Field
         name={'onChange'}
         label={'Radio input onChange'}
         options={options}
@@ -92,6 +96,7 @@ storiesOf('FieldRadio')
             '\npreviousValue: ', previousValue
           );
         }}
+        component={FieldRadio}
       />
     </ReduxForm>
   ));

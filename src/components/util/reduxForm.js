@@ -1,18 +1,18 @@
-export const newOnBlur = (onBlur, input) => (event, newValue, previousValue) => {
+export const mapOnBlur = (onBlur, input) => (event, newValue, previousValue) => {
   if (onBlur) {
     onBlur(event, newValue, previousValue);
   }
   input.onBlur(event, newValue, previousValue);
 }
 
-export const newOnFocus = (onFocus , input) => (event) => {
+export const mapOnFocus = (onFocus , input) => (event) => {
   if (onFocus) {
     onFocus(event);
   }
   input.onFocus(event);
 }
 
-export const newOnChange = (onChange, input) => (event, newValue, previousValue) => {
+export const mapOnChange = (onChange, input) => (event, newValue, previousValue) => {
   if (onChange) {
     onChange(event, newValue, previousValue);
   }

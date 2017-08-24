@@ -7,7 +7,7 @@ import ControlLabel from 'react-bootstrap/lib/ControlLabel';
 import FormControl from 'react-bootstrap/lib/FormControl';
 import HelpBlock from 'react-bootstrap/lib/HelpBlock';
 import theme from '../util/theme';
-import { newOnBlur, newOnFocus, newOnChange } from '../util/reduxForm';
+import { mapOnBlur, mapOnFocus, mapOnChange } from '../util/reduxForm';
 
 import Label from '../Label';
 
@@ -55,9 +55,9 @@ function FieldText({
   const inputProps = {
     ...input,
     type,
-    onBlur: newOnBlur(onBlur, input),
-    onFocus: newOnFocus(onFocus, input),
-    onChange: newOnChange(onChange, input),
+    onBlur: mapOnBlur(onBlur, input),
+    onFocus: mapOnFocus(onFocus, input),
+    onChange: mapOnChange(onChange, input),
     disabled,
     autoComplete,
     componentClass,
