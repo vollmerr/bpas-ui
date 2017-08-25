@@ -14,7 +14,7 @@ ratings:
   paths:
   - src/**/*
 exclude_paths:
-- "*tests/*"
+- "src/**/tests/*"
 - "lib/"
 - "stories/"
 - "scripts/"

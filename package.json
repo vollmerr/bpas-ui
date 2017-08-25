@@ -84,6 +84,7 @@
     "docs": "build-storybook -c .storybook -o ./docs",
     "test": "node scripts/test.js --env=jsdom",
     "test:coverage": "npm test -- --coverage",
+    "test:lcov": "cross-env CODECLIMATE_REPO_TOKEN=4d70542b0183441e739e8bf46c3d8724a20b6b7c10ab8e19c13167cd9c614403 codeclimate-test-reporter < coverage/lcov.info",
     "storybook": "start-storybook -p 6006",
     "predeploy": "npm run build && npm run docs",
     "deploy": "cd lib && npm publish && cd ../"
