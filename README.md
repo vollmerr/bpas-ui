@@ -2,7 +2,7 @@
 
 [bpas-ui](https://github.com/vollmerr/bpas-ui) is for common react components used in BPAS projects. It uses [Create React App](https://github.com/facebookincubator/create-react-app) as its foundation, and is based off the [California State Template for styling](http://beta.template.webtools.ca.gov/sample/).
 
-Try it out at [https://vollmerr.github.io/bpas-ui](https://vollmerr.github.io/bpas-ui)!
+Try it out at [https://vollmerr.github.io/bpas-ui](https://vollmerr.github.io/bpas-ui)
 
 ## Quick Start
 
