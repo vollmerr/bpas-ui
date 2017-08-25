@@ -17585,9 +17585,7 @@ exports[`Storyshots MessageError buttonText 1`] = `
   <h2>
     Sorry, something went wrong!
   </h2>
-  <p>
-    
-  </p>
+  
   <button
     className="btn btn-default"
     disabled={false}
@@ -17606,9 +17604,6 @@ exports[`Storyshots MessageError default 1`] = `
   <h2>
     Sorry, something went wrong!
   </h2>
-  <p>
-    
-  </p>
   
 </div>
 `;
@@ -17623,7 +17618,6 @@ exports[`Storyshots MessageError error 1`] = `
   <p>
     This is an error message.
   </p>
-  
 </div>
 `;
 
@@ -17634,9 +17628,7 @@ exports[`Storyshots MessageError onClick 1`] = `
   <h2>
     Sorry, something went wrong!
   </h2>
-  <p>
-    
-  </p>
+  
   <button
     className="btn btn-default"
     disabled={false}

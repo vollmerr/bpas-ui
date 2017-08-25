@@ -9,17 +9,20 @@ const Message = styled.div`
 `;
 
 /**
- *  Displays a a error message
+ * Displays a a error message
+ * @param {string} error      - error message to display under generic one
+ * @param {func} onClick      - handler for button click
+ * @param {string} buttonText - text for button
  */
 function MessageError({
   error = '',
-  onClick = '',
+  onClick = null,
   buttonText = 'Home',
 }) {
   return (
     <Message>
       <h2>Sorry, something went wrong!</h2>
-      <p>{error}</p>
+      {error && <p>{error}</p>}
       {onClick && <Button onClick={onClick}>{buttonText}</Button>}
     </Message>
   );

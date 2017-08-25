@@ -1,6 +1,8 @@
-# BPAS UI 
+# BPAS UI [![Build Status](https://travis-ci.org/vollmerr/bpas-ui.svg)](https://travis-ci.org/vollmerr/bpas-ui)
 
-[This project](https://github.com/vollmerr/bpas-ui) is for common react components used in BPAS projects. It uses [Create React App](https://github.com/facebookincubator/create-react-app) as its foundation, and is based off the [California State Template for styling](http://beta.template.webtools.ca.gov/sample/).
+[bpas-ui](https://github.com/vollmerr/bpas-ui) is for common react components used in BPAS projects. It uses [Create React App](https://github.com/facebookincubator/create-react-app) as its foundation, and is based off the [California State Template for styling](http://beta.template.webtools.ca.gov/sample/).
+
+Try it out at [https://vollmerr.github.io/bpas-ui](https://vollmerr.github.io/bpas-ui)!
 
 ## Quick Start
 
@@ -160,4 +162,4 @@ The following features will be added in the future:
 * More components...
 * Optional dependencies (redux, etc)
 * Make a better roadmap.....
-* Add travis and code climate
+* Add code climate
