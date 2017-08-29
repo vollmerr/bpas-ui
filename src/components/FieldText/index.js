@@ -1,26 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
 import FormGroup from 'react-bootstrap/lib/FormGroup';
-import ControlLabel from 'react-bootstrap/lib/ControlLabel';
-import FormControl from 'react-bootstrap/lib/FormControl';
-import HelpBlock from 'react-bootstrap/lib/HelpBlock';
-import theme from '../util/theme';
-import { mapOnBlur, mapOnFocus, mapOnChange } from '../util/reduxForm';
 
+import { mapOnBlur, mapOnFocus, mapOnChange } from '../util/reduxForm';
+import Input from '../Field/Input';
+import Error from '../Field/Error';
 import Label from '../Label';
 
-// TODO: fix disabled background (still use bootstrap...)
-const Input = styled(FormControl)`
-  text-overflow: ellipsis;
-  border-radius: 0;
-  height: 36px;
-  font-size: ${theme.font.md}px;
-  background: ${props => props.disabled ? theme.color.darkGrey : 'inherit'};
-`;
-
-/** Generic text input */
+/**
+ * TODO COMMENTS
+ * FUTURE: consolidate all Field components, not very DRY....
+ * @param {*} param0
+ */
 function FieldText({
   meta,
   input,
@@ -40,8 +32,13 @@ function FieldText({
   const { name } = input;
   const { touched, error } = meta;
 
-  const invalidState = touched && error ? 'error' : null;
+  const state = touched && error ? 'error' : null;
   const newPlaceholder = disabled ? '' : placeholder || `Enter ${label}`;
+
+  const groupProps = {
+    controlId: name,
+    validationState: state,
+  };
 
   const labelProps = {
     name,
@@ -64,15 +61,21 @@ function FieldText({
     placeholder: newPlaceholder,
   };
 
+  const errorProps = {
+    error,
+    state,
+  };
+
   return (
-    <FormGroup controlId={name} validationState={invalidState}>
+    <FormGroup {...groupProps}>
       <Label {...labelProps} />
       <Input {...inputProps} />
-      {invalidState && <HelpBlock>{error}</HelpBlock>}
+      <Error {...errorProps} />
     </FormGroup>
   );
 }
 
+// TODO PROPTYPES
 FieldText.propTypes = {
   input: PropTypes.shape({
     name: PropTypes.string.isRequired,

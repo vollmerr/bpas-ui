@@ -12,6 +12,7 @@
   "dependencies": {
     "bootstrap": "3",
     "pikaday": "^1.6.1",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.1",
     "react-dom": "^15.6.1",
@@ -44,11 +45,12 @@
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
     "eslint": "3.19.0",
+    "eslint-config-airbnb": "^15.1.0",
     "eslint-config-react-app": "^1.0.5",
     "eslint-loader": "1.7.1",
     "eslint-plugin-flowtype": "2.34.0",
-    "eslint-plugin-import": "2.2.0",
-    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "7.1.0",
     "extract-text-webpack-plugin": "2.1.2",
     "file-loader": "0.11.2",
@@ -127,8 +129,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "eslintConfig": {
-    "extends": "eslint-config-airbnb"
   }
 }

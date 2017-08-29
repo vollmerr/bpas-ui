@@ -5,19 +5,23 @@ import { Field as ReduxField } from 'redux-form';
 import { isEmptyText } from '../util/validate';
 
 /**
- * Higher Order Component for wrapping custom inputs with
- * redux-form's Field component, while disabling validating
- * if needed and passing custom validation.
+ * Wraps inputs with redux-form's Field component, while
+ * disabling validating if needed and passing custom validation.
+ * @param {bool} required   - determines if the field is required
+ * @param {bool} disabled   - determines if the field is disabled
+ * @param {array} validate  - contains validation functions
+ * @return {JSX}
  */
-function Field({
+const Field = ({
   required,
   disabled,
   validate,
-  ...props,
-}) {
+  ...props
+}) => {
   let isRequired = false;
-  let toValidate = undefined;
+  let toValidate;
 
+  // only require and validate if not disabled
   if (!disabled) {
     isRequired = required;
 
@@ -40,7 +44,16 @@ function Field({
   );
 };
 
-// TODO PROPS / DEFAULTS
-Field.propTypes = {};
+Field.propTypes = {
+  required: PropTypes.bool,
+  disabled: PropTypes.bool,
+  validate: PropTypes.arrayOf(PropTypes.func),
+};
+
+Field.defaultProps = {
+  required: false,
+  disabled: false,
+  validate: [],
+};
 
 export default Field;

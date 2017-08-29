@@ -110,7 +110,8 @@ storiesOf('FieldSelect', module)
         name={'onchange_select'}
         label={'Select Input onChange'}
         onChange={storyOnChange}
-        placeholder={'Look at the console'}
+        onBlur={() => console.log("f")}
+        placeholder={'Select an option'}
         component={FieldSelect}
       />
     </ReduxForm>

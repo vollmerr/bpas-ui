@@ -13,6 +13,7 @@ import { mapOnBlur, mapOnFocus, mapOnChange } from '../util/reduxForm';
 import Label from '../Label';
 import './datePicker.css';
 
+// FIXME!!!!!!!!!!!!!
 class FieldDate extends Component {
   constructor(props, context) {
     super(props, context);
