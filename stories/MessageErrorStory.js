@@ -6,7 +6,7 @@ const exampleOnClick = () => alert('Error message button clicked.');
 const exampleError = 'This is an error message.';
 const exampleButtonText = 'Custom Error Message Button';
 
-storiesOf('MessageError', module)
+storiesOf('Util / MessageError', module)
   .add('default', () => <MessageError />)
   .add('error', () => <MessageError error={exampleError} />)
   .add('onClick', () => <MessageError onClick={exampleOnClick} />)

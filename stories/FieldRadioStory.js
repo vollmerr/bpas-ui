@@ -13,7 +13,7 @@ const options = [
   { label: 'Option 4 Label', value: 'Option 4 Value' },
 ];
 
-storiesOf('FieldRadio', module)
+storiesOf('Form / FieldRadio', module)
   .addDecorator(story =>
     <Provider story={story} />
   )

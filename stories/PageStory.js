@@ -9,7 +9,7 @@ const customLinks = [
   {text: 'Test 3', href: '/Page3', icon: 'gear'},
 ];
 
-storiesOf('Page', module)
+storiesOf('Layout / Page', module)
   .addDecorator(StoryRouter())
   .add('default links', () => <Page title="Test Default Page">content goes here</Page>)
   .add('custom links', () => <Page title="Test Custom Links Page" links={customLinks}>content goes here</Page>);

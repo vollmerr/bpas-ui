@@ -13,7 +13,7 @@ import NavLinks from '../src/components/Header/NavLinks';
 import NavLink from '../src/components/Header/NavLink';
 import NavLogo from '../src/components/Header/NavLogo';
 
-storiesOf('Header', module)
+storiesOf('Layout / Header', module)
   .addDecorator(StoryRouter())
   .add('<Header />', () => <Header title="Test Header" />)
 

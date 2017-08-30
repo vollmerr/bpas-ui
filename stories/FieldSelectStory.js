@@ -21,7 +21,7 @@ const options = [
   { label: 'Option 4 Label', value: 'Option 4 Value' },
 ]
 
-storiesOf('FieldSelect', module)
+storiesOf('Form / FieldSelect', module)
   .addDecorator(story =>
     <Provider story={story} />
   )

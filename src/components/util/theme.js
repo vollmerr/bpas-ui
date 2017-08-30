@@ -1,4 +1,8 @@
 export default {
+  primary: '#046b99',
+
+
+
   color: {
     theme: {
       darker: '',

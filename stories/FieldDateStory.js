@@ -14,7 +14,7 @@ const widths = [
   3
 ];
 
-storiesOf('FieldDate', module)
+storiesOf('Form / FieldDate', module)
   .addDecorator(story =>
     <Provider story={story} />
   )

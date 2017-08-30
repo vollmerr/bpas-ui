@@ -12,6 +12,8 @@ export { default as FieldDate } from './FieldDate';
 export { default as FieldRadio } from './FieldRadio';
 
 // UTILITY
+export { default as A } from './A';
+export { default as Button } from './Button';
 export { default as Icon } from './Icon';
 export { default as Tooltip } from './Tooltip';
 export { default as MessageError } from './MessageError';

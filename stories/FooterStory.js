@@ -5,7 +5,7 @@ import { Footer } from '../src/components';
 
 import Links from '../src/components/Footer/Links';
 
-storiesOf('Footer', module)
+storiesOf('Layout / Footer', module)
   .addDecorator(StoryRouter())
   .add('<Footer />', () => <Footer />)
   .add('<Links />', () => <Links />);

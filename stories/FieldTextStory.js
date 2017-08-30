@@ -20,7 +20,7 @@ const exampleValidation = value => (
   : undefined
 );
 
-storiesOf('FieldText', module)
+storiesOf('Form / FieldText', module)
   .addDecorator(story =>
     <Provider story={story} />
   )
